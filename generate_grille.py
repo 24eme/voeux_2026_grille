@@ -9,6 +9,8 @@ class MotCroise:
         self.mots = []
         self.message = ""
         self.mots_message = []
+        self.msg_positions = []
+
 
     def addMot(self, mot, definition):
         self.mots.append([mot.upper(), definition])
@@ -121,6 +123,26 @@ class MotCroise:
                 self.setPositionMot(mot, x, y, o)
                 break
 
+    def identifyLettresMessage(self):
+        lettres = list(self.message)
+        l = lettres.pop(0)
+        debut = 0
+        for y in range(self.grille_taille):
+            for x in range(debut, self.grille_taille):
+                print([x,y])
+                if l == ' ':
+                    l = lettres.pop(0)
+                    debut = 0
+                    break
+                if l == self.grille_yx[y][x]:
+                    self.msg_positions.append([x, y])
+                    debut = x
+                    if not len(lettres):
+                        return True
+                    l = lettres.pop(0)
+        if len(lettres):
+            return False
+        return True
 
     def print(self):
         for g in self.grille_yx:
