@@ -3,31 +3,15 @@ import json
 
 class MotCroise:
 
-    def __init__(self):
-        self.grille_yx = []
-        self.grille_taille = 0
-        self.mots = []
-        self.message = ""
-        self.mots_message = []
+    def __init__(self, grille_yx, mots_possibles, message):
+        self.grille_yx = grille_yx
+        self.grille_taille = len(grille_yx)
+        self.mots = mots_possibles
+        self.message = message
         self.msg_positions = []
 
-
-    def addMot(self, mot, definition):
-        self.mots.append([mot.upper(), definition])
-
-    def loadJson(self, json_file):
-        with open(json_file) as f:
-            mots = json.load(f)
-            for m in mots:
-                self.addMot(m, mots[m])
-
-    def setMessage(self, msg):
-        self.message = msg
-        for (mot,definition) in self.mots:
-            for lettre in self.message:
-                if lettre in mot:
-                    self.mots_message.append(mot)
-                    break;
+    def removeMot(self, mot):
+        self.mots.remove(mot)
 
     def setPositionMot(self, mot, position_x, position_y, orientation):
         if orientation == 'H':
@@ -96,33 +80,6 @@ class MotCroise:
 
         return has_intersection
 
-    def generate(self, taille):
-        self.grille_taille = taille
-        for x in range(taille):
-            self.grille_yx.append([' ' for y in range(taille)])
-
-        self.mots_message.sort(key=lambda s: len(s), reverse=True)
-
-        self.setPositionMot(self.mots_message[0], int(taille / 2) - int (len(self.mots_message[0]) / 2), int(taille / 2), 'H')
-
-        for mot in self.mots_message:
-            positions_mot = []
-            need_new_mot = False
-            for x in range(taille):
-                if need_new_mot:
-                    break
-                for y in range(taille):
-                    if need_new_mot:
-                        break
-                    for o in ['V', 'H']:
-                        if self.isPositionOK(mot, x, y, o):
-                            positions_mot.append([x, y, o])
-                            need_new_mot = True
-                            break
-            for (x, y, o) in positions_mot:
-                self.setPositionMot(mot, x, y, o)
-                break
-
     def identifyLettresMessage(self):
         lettres = list(self.message)
         l = lettres.pop(0)
@@ -157,15 +114,77 @@ class MotCroise:
             print(" ║" + "".join(presentation_x) + "║")
         print("  " + "=" * self.grille_taille * 3 +" ")
 
+    def generation(self):
+        for mot in self.mots:
+            positions_mot = []
+            need_new_mot = False
+            for x in range(self.grille_taille):
+                if need_new_mot:
+                    break
+                for y in range(self.grille_taille):
+                    if need_new_mot:
+                        break
+                    for o in ['V', 'H']:
+                        if self.isPositionOK(mot, x, y, o):
+                            positions_mot.append([x, y, o])
+                            need_new_mot = True
+                            break
+            for (x, y, o) in positions_mot:
+                self.setPositionMot(mot, x, y, o)
+                break
+
+class MotCroiseGenerator:
+
+    def __init__(self):
+        self.mots = []
+        self.message = ""
+        self.mots_message = []
+
+    def addMot(self, mot, definition):
+        self.mots.append([mot.upper(), definition])
+
+    def loadJson(self, json_file):
+        with open(json_file) as f:
+            mots = json.load(f)
+            for m in mots:
+                self.addMot(m, mots[m])
+
+    def setMessage(self, msg):
+        self.message = msg
+        for (mot,definition) in self.mots:
+            for lettre in self.message:
+                if lettre in mot:
+                    self.mots_message.append(mot)
+                    break;
+
+    def generate(self, taille):
+        grille_yx = []
+        for x in range(taille):
+            grille_yx.append([' ' for y in range(taille)])
+
+        self.mots_message.sort(key=lambda s: len(s), reverse=True)
+
+        for premier_mot in self.mots_message:
+            mc = MotCroise(grille_yx, self.mots_message, self.message)
+            mc.setPositionMot(premier_mot, int(taille / 2) - int (len(premier_mot) / 2), int(taille / 2), 'H')
+            mc.removeMot(premier_mot)
+            mc.generation()
+            return mc
+
+
 if __name__ == "__main__":
 
     mot_secret="BONNE ANNEE JESUS"
     if len(sys.argv) > 1:
         mot_secret=sys.argv[1].upper()
 
-    mc = MotCroise()
-    mc.loadJson("mots_principaux.json")
-    mc.loadJson("mots_complementaires.json")
-    mc.setMessage(mot_secret)
-    mc.generate(25)
+    gene = MotCroiseGenerator()
+    gene.loadJson("mots_principaux.json")
+    gene.loadJson("mots_complementaires.json")
+    gene.setMessage(mot_secret)
+    mc = gene.generate(25)
+
+    if mc.identifyLettresMessage():
+        print("Lettre OK")
+    print(mc.msg_positions)
     mc.print()
