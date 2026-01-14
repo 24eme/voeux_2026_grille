@@ -129,7 +129,6 @@ class MotCroise:
         debut = 0
         for y in range(self.grille_taille):
             for x in range(debut, self.grille_taille):
-                print([x,y])
                 if l == ' ':
                     l = lettres.pop(0)
                     debut = 0
@@ -144,11 +143,19 @@ class MotCroise:
             return False
         return True
 
-    def print(self):
-        for g in self.grille_yx:
-            print(g)
-            print()
 
+    def print(self):
+        print("  " + "=" * self.grille_taille * 3 +" ")
+        mot_presentations = []
+        for y in range(self.grille_taille):
+            presentation_x = []
+            for x in range(self.grille_taille):
+                if ([x, y] in self.msg_positions):
+                    presentation_x.append("["+self.grille_yx[y][x]+"]")
+                else:
+                    presentation_x.append(" "+self.grille_yx[y][x]+" ")
+            print(" ║" + "".join(presentation_x) + "║")
+        print("  " + "=" * self.grille_taille * 3 +" ")
 
 if __name__ == "__main__":
 
