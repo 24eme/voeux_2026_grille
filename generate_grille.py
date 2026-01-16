@@ -24,7 +24,7 @@ class MotCroise:
         min_y = 0
         mots = self.message.split( )
         for mot in mots:
-            max_y = min_y + int(self.grille_taille / (len(mots)) + 1)
+            max_y = min_y + int(self.grille_taille / len(mots))
             min_x = 0
             for lettre in list(mot):
                 max_x = min_x + int(self.grille_taille / (len(mot) + 1))
@@ -108,7 +108,7 @@ class MotCroise:
 
     def getScore(self, is_premier=False):
         self.identifyLettresMessage(is_premier)
-        return self.score
+        return self.score / (len(self.message) * 50)
 
     def identifyLettresMessage(self, is_premier=False, debug=False):
         lettres = list(self.message)
@@ -184,7 +184,7 @@ class MotCroise:
 
     def print(self, is_premier=False):
         print("  " + "=" * self.grille_taille * 3 +" ")
-        print("  " + str(self.getScore(is_premier)) +" " + str(len(self.message)) + " " + str(self.iteration_nb))
+        print("  " + str(self.getScore(is_premier)) +" " + str(len(self.message)) + " " + str(self.iteration_nb) + "["+self.message+"]")
         mot_presentations = []
         for y in range(self.grille_taille):
             presentation_x = []
@@ -203,8 +203,6 @@ class MotCroise:
 
         if (profondeur > len(un_mot_croise.message)):
             return (None, un_mot_croise.iteration_nb)
-        if profondeur % 4 == 0:
-            un_mot_croise.print()
         current_score = un_mot_croise.getScore()
         for mot in un_mot_croise.mots:
             positions_mot = []
@@ -222,17 +220,15 @@ class MotCroise:
                             new_mc.removeMot(mot)
                             score = new_mc.getScore()
                             if score > current_score:
-                                new_mc.print()
                                 positions_mot.append([copy.deepcopy(new_mc), score])
             positions_mot.sort(key=lambda x: x[1], reverse=True)
             i = 0
             for (new_mc, score) in positions_mot:
                 if new_mc.identifyLettresMessage():
-                    new_mc.print()
                     return (new_mc, new_mc.iteration_nb)
                 (new_mc, ite) = MotCroise.generation(new_mc, un_mot_croise.profondeur + 1, un_mot_croise.iteration_nb+1)
                 un_mot_croise.iteration_nb = ite
-                if not (un_mot_croise.iteration_nb % 100) and (un_mot_croise.profondeur > (len(un_mot_croise.message) - (len(un_mot_croise.message) / 4) * (int(un_mot_croise.iteration_nb / 500) + 1)) ):
+                if not (un_mot_croise.iteration_nb % 50) and (un_mot_croise.profondeur > 5):
                     return (None, un_mot_croise.iteration_nb)
                 if new_mc:
                     return (new_mc, new_mc.iteration_nb)
@@ -333,10 +329,8 @@ class MotCroiseGenerator:
             mc.setPositionMot(premier_mot, int(taille / 2) - int (len(premier_mot) / 2), int(taille / 2), 'H')
             mc.removeMot(premier_mot)
             score = mc.getScore(True)
-            mc.print(True)
             premier_mot_possibles.append([copy.deepcopy(mc), mc.getScore(True)])
         premier_mot_possibles.sort(key=lambda x: x[1], reverse=True)
-        premier_mot_possibles[0][0].print(True)
         for (mc, score) in premier_mot_possibles:
             grille = copy.deepcopy(mc)
             (grille, i) = grille.generation()
