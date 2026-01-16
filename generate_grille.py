@@ -15,6 +15,7 @@ class MotCroise:
         self.nb_lettres_found = 0
         self.score_matrix = [0] * len(self.message)
         self.iteration_nb = 0
+        self.profondeur = 0
         self.initScoreMatrix()
 
     def initScoreMatrix(self):
@@ -22,10 +23,10 @@ class MotCroise:
         min_y = 0
         mots = self.message.split( )
         for mot in mots:
-            max_y = min_y + int(self.grille_taille / len(mots))
+            max_y = min_y + int(self.grille_taille / (len(mots)) + 1)
             min_x = 0
             for lettre in list(mot):
-                max_x = min_x + int(self.grille_taille / len(mot))
+                max_x = min_x + int(self.grille_taille / (len(mot) + 1))
                 self.score_matrix[x] = [min_x, max_x, min_y, max_y]
                 min_x = max_x + 1
                 x += 1
@@ -108,7 +109,7 @@ class MotCroise:
         self.identifyLettresMessage(is_premier)
         return self.score
 
-    def identifyLettresMessage(self, is_premier=False):
+    def identifyLettresMessage(self, is_premier=False, debug=False):
         lettres = list(self.message)
         self.score = 0
         self.nb_lettres_found = 0
@@ -142,23 +143,29 @@ class MotCroise:
                         score_to_add = 0
                         if min_x <= x and max_x >= x and min_y <= y and max_y >= y:
                             score_to_add += self.grille_taille * 2
-#                        elif min_x < x:
-#                            score_to_add += int(self.grille_taille / 2) - min_x + x
-#                        else :
-#                            score_to_add += int(self.grille_taille / 2) - x + max_x
-#                        if :
-#                            score_to_add += self.grille_taille
-#                        elif min_y < y:
-#                            score_to_add += int(self.grille_taille / 2) - min_y + y
-#                        else :
-#                            score_to_add += int(self.grille_taille / 2) - y + max_y
                         else:
-                            score_to_add += 10
-                        self.score += score_to_add
-                        for a in range(x-1, x+1):
-                            for b in range(y-1, y+1):
-                                if [a,b] in self.msg_positions:
-                                    self.score -= 5
+                            diff = 0
+                            if min_x <= x and max_x >= x:
+                                if max_y < y:
+                                    diff += y - max_y
+                                if min_y > y:
+                                    diff += min_y - y
+                            if min_y <= y and max_y >= y:
+                                if max_x < x:
+                                    diff += x - max_x
+                                if min_x > x:
+                                    diff += min_x - x
+                            score_to_add += int(self.grille_taille / 2) - diff
+                        score_penalite = 0
+                        for a in [x-1, x+1]:
+                            if [a,y] in self.msg_positions:
+                                score_penalite -= 10
+                        for b in [y-1, y+1]:
+                            if [x,b] in self.msg_positions:
+                                score_penalite -= 10
+                        self.score += score_to_add # + score_penalite
+                        if debug:
+                            print({'lettre': l, 'min_x': min_x, 'x': x, 'max_x': max_x, 'min_y': min_y, 'y': y, 'max_y': max_y, 'score_to_add': score_to_add, 'score_penalite': score_penalite, 'score': self.score})
                         self.nb_lettres_found += 1
                         debut = x
                         if not len(lettres):
@@ -176,7 +183,7 @@ class MotCroise:
 
     def print(self, is_premier=False):
         print("  " + "=" * self.grille_taille * 3 +" ")
-        print("  " + str(self.getScore(is_premier)) +" " + str(len(self.message)))
+        print("  " + str(self.getScore(is_premier)) +" " + str(len(self.message)) + " " + str(self.iteration_nb))
         mot_presentations = []
         for y in range(self.grille_taille):
             presentation_x = []
@@ -188,13 +195,14 @@ class MotCroise:
             print(" ║" + "".join(presentation_x) + "║")
         print("  " + "=" * self.grille_taille * 3 +" ")
 
-    def generation(mot_croise, i=1):
+    def generation(mot_croise, profondeur=1, iteration=0):
         un_mot_croise = copy.deepcopy(mot_croise)
-        un_mot_croise.iteration_nb = i
+        un_mot_croise.profondeur = profondeur
+        un_mot_croise.iteration_nb = iteration
 
-        if (i > len(un_mot_croise.message)):
-            return None
-        if i % 4 == 0:
+        if (profondeur > len(un_mot_croise.message)):
+            return (None, un_mot_croise.iteration_nb)
+        if profondeur % 4 == 0:
             un_mot_croise.print()
         current_score = un_mot_croise.getScore()
         for mot in un_mot_croise.mots:
@@ -220,13 +228,16 @@ class MotCroise:
             for (new_mc, score) in positions_mot:
                 if new_mc.identifyLettresMessage():
                     new_mc.print()
-                    return new_mc
-                new_mc = MotCroise.generation(new_mc, un_mot_croise.iteration_nb+1)
+                    return (new_mc, new_mc.iteration_nb)
+                (new_mc, ite) = MotCroise.generation(new_mc, un_mot_croise.profondeur + 1, un_mot_croise.iteration_nb+1)
+                un_mot_croise.iteration_nb = ite
+                if not (un_mot_croise.iteration_nb % 100) and (un_mot_croise.profondeur > (len(un_mot_croise.message) - (len(un_mot_croise.message) / 4) * (int(un_mot_croise.iteration_nb / 500) + 1)) ):
+                    return (None, un_mot_croise.iteration_nb)
                 if new_mc:
-                    return new_mc
+                    return (new_mc, new_mc.iteration_nb)
                 if i > len(positions_mot) / 2:
                     break;
-        return None
+        return (None, un_mot_croise.iteration_nb)
 
 class MotCroiseGenerator:
 
@@ -272,7 +283,7 @@ class MotCroiseGenerator:
         premier_mot_possibles[0][0].print(True)
         for (mc, score) in premier_mot_possibles:
             grille = copy.deepcopy(mc)
-            grille = grille.generation()
+            (grille, i) = grille.generation()
             if grille:
                 return grille
 
@@ -289,7 +300,7 @@ if __name__ == "__main__":
     gene.setMessage(mot_secret)
     mc = gene.generate(25)
 
-    if mc.identifyLettresMessage():
+    if mc.identifyLettresMessage(False, True):
         print("Lettre OK")
     print(mc.msg_positions)
     mc.print()
