@@ -10,6 +10,7 @@ class MotCroise:
         self.mots = mots_possibles.copy()
         self.message = message
         self.msg_positions = []
+        self.mots_selectionnes = []
         self.mots_nb = nb_mot
         self.score = -1
         self.nb_lettres_found = 0
@@ -33,11 +34,11 @@ class MotCroise:
             x += 1
             min_y = max_y + 1
 
-
     def removeMot(self, mot):
         self.mots.remove(mot)
 
     def setPositionMot(self, mot, position_x, position_y, orientation):
+        self.mots_selectionnes.append([position_y * self.grille_taille + position_x, mot, position_x, position_y])
         self.mots_nb += 1
         if orientation == 'H':
             for mot_x in (range(len(mot))):
@@ -239,6 +240,61 @@ class MotCroise:
                     break;
         return (None, un_mot_croise.iteration_nb)
 
+    def exportToSvg(self, filename):
+        cellule_taille = 50
+        margin = 50
+        global_size = self.grille_taille * cellule_taille + 2 * margin
+
+        svg_content = f'''<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="{global_size}" height="{global_size + 50}" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                .cell {{ stroke: black; stroke-width: 1; fill: white; }}
+                .black {{ fill: #333; }}
+                .letter {{ font-family: Arial; font-size: 28px; font-weight: bold; text-anchor: middle; }}
+                .secret {{ fill: #FF6B00; }}
+                .normal {{ fill: black; }}
+                .number {{ font-family: Arial; font-size: 12px; fill: #666; }}
+                .title {{ font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: middle; }}
+            </style>
+
+            <text x="{global_size/2}" y="30" class="title">Mots Croisés</text>
+        '''
+
+        numeros_mots = {}
+        self.mots_selectionnes.sort(key=lambda x:x[0])
+        for i in range(len(self.mots_selectionnes)):
+            numeros_mots[(self.mots_selectionnes[i][2], self.mots_selectionnes[i][3])] = i + 1
+
+        # Dessiner la grille
+        for gx in range(self.grille_taille):
+            for gy in range(self.grille_taille):
+                x = margin + gx * cellule_taille
+                y = margin + gy * cellule_taille + 40  # Décalage pour le titre
+                cellule = self.grille_yx[gy][gx]
+                est_lettre_secrete = [gx, gy] in self.msg_positions
+
+                # Case
+                cell_class = "cell black" if cellule == ' ' else "cell"
+                svg_content += f'    <rect x="{x}" y="{y}" width="{cellule_taille}" height="{cellule_taille}" class="{cell_class}"/>\n'
+
+                if cellule != ' ':
+                    # Numéro
+                    if (gx, gy) in numeros_mots:
+                        num = numeros_mots[(gx, gy)]
+                        svg_content += f'    <text x="{x + 5}" y="{y + 15}" class="number">{num}</text>\n'
+
+                    # Lettre
+                    letter_x = x + cellule_taille / 2
+                    letter_y = y + cellule_taille / 2 + 10
+                    letter_class = "letter secret" if est_lettre_secrete else "letter normal"
+                    svg_content += f'    <text x="{letter_x}" y="{letter_y}" class="{letter_class}">{cellule}</text>\n'
+
+        # Légende
+        svg_content += '</svg>'
+
+        with open(filename, 'w', encoding='utf-8') as f:
+            f.write(svg_content)
+
 class MotCroiseGenerator:
 
     def __init__(self):
@@ -304,3 +360,5 @@ if __name__ == "__main__":
         print("Lettre OK")
     print(mc.msg_positions)
     mc.print()
+
+    mc.exportToSvg("grille.svg")
