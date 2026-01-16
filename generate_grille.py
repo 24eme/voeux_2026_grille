@@ -10,6 +10,7 @@ class MotCroise:
         self.mots = mots_possibles.copy()
         self.message = message
         self.msg_positions = []
+        self.msg_mot_id = {}
         self.mots_selectionnes = []
         self.mots_nb = nb_mot
         self.score = -1
@@ -115,13 +116,15 @@ class MotCroise:
         self.score = 0
         self.nb_lettres_found = 0
         self.msg_positions = []
+        self.msg_mot_id = {}
         debut = 0
         lettre_id = -1
+        mot_id = 1
         if (is_premier):
             lettre_id = int(len(lettres)/2) - 2
             lettres = lettres[int(len(lettres)/2) - 1:]
         l = 'X'
-        while (l ):
+        while (l):
             if not len(lettres) :
                 break
             l = lettres.pop(0)
@@ -132,6 +135,7 @@ class MotCroise:
                 for x in range(debut, self.grille_taille):
                     if l == ' ':
                         l = lettres.pop(0)
+                        mot_id += 1
                         lettre_id += 1
                         self.nb_lettres_found += 1
                         debut = 0
@@ -140,6 +144,7 @@ class MotCroise:
                         continue
                     if l == self.grille_yx[y][x]:
                         self.msg_positions.append([x, y])
+                        self.msg_mot_id[(x, y)] = mot_id
                         (min_x, max_x, min_y, max_y) = self.score_matrix[lettre_id]
                         score_to_add = 0
                         if min_x <= x and max_x >= x and min_y <= y and max_y >= y:
@@ -247,8 +252,13 @@ class MotCroise:
                 .cell {{ stroke: black; stroke-width: 1; fill: white; }}
                 .black {{ fill: #333; }}
                 .letter {{ font-family: Arial; font-size: 28px; font-weight: bold; text-anchor: middle; }}
-                .secret {{ fill: #FF6B00; }}
-                .normal {{ fill: black; }}
+                // .secret {{ fill: #FF6B00; }}
+                .mot1 {{ fill: red; }}
+                .mot2 {{ fill: blue; }}
+                .mot3 {{ fill: green; }}
+                .mot4 {{ fill: orange; }}
+                .mot5 {{ fill: pink; }}
+                .normal {{ fill: white; }}
                 .number {{ font-family: Arial; font-size: 12px; fill: #666; }}
                 .title {{ font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: middle; }}
             </style>
@@ -282,7 +292,7 @@ class MotCroise:
                     # Lettre
                     letter_x = x + cellule_taille / 2
                     letter_y = y + cellule_taille / 2 + 10
-                    letter_class = "letter secret" if est_lettre_secrete else "letter normal"
+                    letter_class = "letter secret mot"+str(self.msg_mot_id[(gx, gy)]) if est_lettre_secrete else "letter normal"
                     svg_content += f'    <text x="{letter_x}" y="{letter_y}" class="{letter_class}">{cellule}</text>\n'
 
         # Légende
