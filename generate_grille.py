@@ -339,10 +339,9 @@ class MotCroiseGenerator:
             mc.setPositionMot(premier_mot, int(taille / 2) - int (len(premier_mot) / 2), int(taille / 2), 'H')
             mc.removeMot(premier_mot)
             score = mc.getScore(True)
-            premier_mot_possibles.append([copy.deepcopy(mc), mc.getScore(True)])
-        premier_mot_possibles.sort(key=lambda x: x[1], reverse=True)
-        for (mc, score) in premier_mot_possibles:
-            grille = copy.deepcopy(mc)
+            premier_mot_possibles.append(copy.deepcopy(mc))
+        premier_mot_possibles.sort(key=lambda x: x.getScore(True), reverse=True)
+        for grille in premier_mot_possibles:
             (grille, i) = grille.generation()
             if grille:
                 return grille
