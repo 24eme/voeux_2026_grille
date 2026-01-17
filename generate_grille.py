@@ -201,12 +201,12 @@ class MotCroise:
             print(" ║" + "".join(presentation_x) + "║")
         print("  " + "=" * self.grille_taille * 3 +" ")
 
-    def generation(mot_croise, profondeur=1, iteration=0):
+    def generation(mot_croise, iteration=0):
         un_mot_croise = copy.deepcopy(mot_croise)
-        un_mot_croise.profondeur = profondeur
+        un_mot_croise.profondeur += 1
         un_mot_croise.iteration_nb = iteration
 
-        if (profondeur > len(un_mot_croise.message)):
+        if (un_mot_croise.profondeur > len(un_mot_croise.message)):
             return (None, un_mot_croise.iteration_nb)
         current_score = un_mot_croise.getScore()
         for mot in un_mot_croise.mots:
@@ -231,7 +231,7 @@ class MotCroise:
             for (new_mc, score) in positions_mot:
                 if new_mc.identifyLettresMessage():
                     return (new_mc, new_mc.iteration_nb)
-                (new_mc, ite) = MotCroise.generation(new_mc, un_mot_croise.profondeur + 1, un_mot_croise.iteration_nb+1)
+                (new_mc, ite) = MotCroise.generation(new_mc, un_mot_croise.iteration_nb+1)
                 un_mot_croise.iteration_nb = ite
                 if not (un_mot_croise.iteration_nb % 50) and (un_mot_croise.profondeur > 5):
                     return (None, un_mot_croise.iteration_nb)
