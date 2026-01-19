@@ -370,6 +370,9 @@ class MotCroiseGenerator:
 if __name__ == "__main__":
 
     mot_secret="BONNE ANNEE JESUS"
+    file_prefixe = ''
+    if len(sys.argv) > 2:
+        file_prefixe=sys.argv[2].upper()
     if len(sys.argv) > 1:
         mot_secret=sys.argv[1].upper()
 
@@ -384,4 +387,4 @@ if __name__ == "__main__":
     print(mc.msg_positions)
     mc.print()
 
-    mc.exportToSvg("grille.svg")
+    mc.exportToSvg(file_prefixe + "grille.svg")
