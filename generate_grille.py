@@ -378,7 +378,7 @@ class MotCroiseGenerator:
 
                         new_generations.sort(key=lambda x: x[0].getScore(), reverse=True)
 
-                generations = new_generations[:20 - premiere_passe * 10]
+                generations = new_generations[:int(pas - (premiere_passe * pas / 2))]
                 premiere_passe = 1
 
 
