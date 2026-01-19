@@ -201,7 +201,11 @@ class MotCroise:
             print(" ║" + "".join(presentation_x) + "║")
         print("  " + "=" * self.grille_taille * 3 +" ")
 
-    def generation(mot_croise, iteration=0):
+    def generation(mot_croise, ttl=5, iteration=0):
+
+        if ttl < 1:
+            return (mot_croise, mot_croise.iteration_nb)
+
         un_mot_croise = copy.deepcopy(mot_croise)
         un_mot_croise.profondeur += 1
         un_mot_croise.iteration_nb = iteration
@@ -231,7 +235,7 @@ class MotCroise:
             for (new_mc, score) in positions_mot:
                 if new_mc.identifyLettresMessage():
                     return (new_mc, new_mc.iteration_nb)
-                (new_mc, ite) = MotCroise.generation(new_mc, un_mot_croise.iteration_nb+1)
+                (new_mc, ite) = MotCroise.generation(new_mc, ttl - 1, un_mot_croise.iteration_nb+1)
                 un_mot_croise.iteration_nb = ite
                 if not (un_mot_croise.iteration_nb % 50) and (un_mot_croise.profondeur > 5):
                     return (None, un_mot_croise.iteration_nb)
@@ -338,13 +342,29 @@ class MotCroiseGenerator:
             mc = copy.deepcopy(empty_mot_croise)
             mc.setPositionMot(premier_mot, int(taille / 2) - int (len(premier_mot) / 2), int(taille / 2), 'H')
             mc.removeMot(premier_mot)
-            score = mc.getScore(True)
-            premier_mot_possibles.append(copy.deepcopy(mc))
-        premier_mot_possibles.sort(key=lambda x: x.getScore(True), reverse=True)
-        for grille in premier_mot_possibles:
-            (grille, i) = grille.generation()
-            if grille:
-                return grille
+            premier_mot_possibles.append([copy.deepcopy(mc), 0])
+
+        premier_mot_possibles.sort(key=lambda x: x[0].getScore(True), reverse=True)
+
+        pas = 10
+        for i in range (0, len(premier_mot_possibles), pas):
+            generations = premier_mot_possibles[i:i+pas-1]
+
+            premiere_passe = 0
+            while len(generations):
+                new_generations = []
+                for (grille, ite) in generations:
+                    (grille, i) = grille.generation(5, ite)
+                    if grille:
+                        if grille.identifyLettresMessage() and grille.getScore() > 0.65:
+                            return grille
+
+                        new_generations.append([grille, i])
+
+                        new_generations.sort(key=lambda x: x[0].getScore(), reverse=True)
+
+                generations = new_generations[:20 - premiere_passe * 10]
+                premiere_passe = 1
 
 
 if __name__ == "__main__":
