@@ -382,9 +382,9 @@ if __name__ == "__main__":
     gene.setMessage(mot_secret)
     mc = gene.generate(25)
 
-    if mc.identifyLettresMessage(False, True):
-        print("Lettre OK")
     print(mc.msg_positions)
     mc.print()
+
+    print([mot_secret, mc.getScore()])
 
     mc.exportToSvg(file_prefixe + "grille.svg")
