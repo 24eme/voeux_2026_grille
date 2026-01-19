@@ -165,11 +165,11 @@ class MotCroise:
                         score_penalite = 0
                         for a in [x-1, x+1]:
                             if [a,y] in self.msg_positions:
-                                score_penalite -= 10
+                                score_penalite -= score_to_add
                         for b in [y-1, y+1]:
                             if [x,b] in self.msg_positions:
-                                score_penalite -= 10
-                        self.score += score_to_add # + score_penalite
+                                score_penalite -= score_to_add
+                        self.score += score_to_add + score_penalite
                         if debug:
                             print({'lettre': l, 'min_x': min_x, 'x': x, 'max_x': max_x, 'min_y': min_y, 'y': y, 'max_y': max_y, 'score_to_add': score_to_add, 'score_penalite': score_penalite, 'score': self.score})
                         self.nb_lettres_found += 1
