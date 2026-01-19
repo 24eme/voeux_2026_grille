@@ -25,7 +25,7 @@ class MotCroise:
         min_y = 0
         mots = self.message.split( )
         for mot in mots:
-            max_y = min_y + int(self.grille_taille / len(mots))
+            max_y = min_y + int(self.grille_taille / (len(mots) + 1))
             min_x = 0
             for lettre in list(mot):
                 max_x = min_x + int(self.grille_taille / (len(mot) + 1))
@@ -33,7 +33,7 @@ class MotCroise:
                 min_x = max_x + 1
                 x += 1
             x += 1
-            min_y = max_y + 1
+            min_y = max_y + 2
 
     def removeMot(self, mot):
         self.mots.remove(mot)
