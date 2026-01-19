@@ -354,7 +354,7 @@ class MotCroiseGenerator:
             while len(generations):
                 new_generations = []
                 for (grille, ite) in generations:
-                    (grille, i) = grille.generation(5, ite)
+                    (grille, i) = grille.generation(3, ite)
                     if grille:
                         if grille.identifyLettresMessage() and grille.getScore() > 0.65:
                             return grille
