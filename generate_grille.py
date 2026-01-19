@@ -8,6 +8,7 @@ class MotCroise:
         self.grille_yx = grille_yx.copy()
         self.grille_taille = len(grille_yx)
         self.mots = mots_possibles.copy()
+        self.definitions = {}
         self.message = message
         self.msg_positions = []
         self.msg_mot_id = {}
@@ -34,6 +35,9 @@ class MotCroise:
                 x += 1
             x += 1
             min_y = max_y + 2
+
+    def addDefinition(self, definitions):
+        self.definitions = definitions
 
     def removeMot(self, mot):
         self.mots.remove(mot)
@@ -245,7 +249,7 @@ class MotCroise:
                     break;
         return (None, un_mot_croise.iteration_nb)
 
-    def exportToSvg(self, filename):
+    def exportGrilleToSvg(self, filename):
         cellule_taille = 50
         margin = 50
         global_size = self.grille_taille * cellule_taille + 2 * margin
@@ -305,12 +309,21 @@ class MotCroise:
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(svg_content)
 
+    def exportDefinitionToJSON(self, filename):
+        self.mots_selectionnes.sort(key=lambda x:x[0])
+        json_data = []
+        for i in range(len(self.mots_selectionnes)):
+            json_data.append({'mot_id': i, 'mot': self.mots_selectionnes[i][1], 'definition': self.definitions.get(self.mots_selectionnes[i][1], "ma définition")})
+        with open(filename, 'w') as f:
+            json.dump(json_data, f)
+
 class MotCroiseGenerator:
 
     def __init__(self):
         self.mots = []
         self.message = ""
         self.mots_message = []
+        self.definitions = {}
 
     def addMot(self, mot, definition):
         self.mots.append([mot.upper(), definition])
@@ -327,6 +340,7 @@ class MotCroiseGenerator:
             for lettre in self.message:
                 if lettre in mot:
                     self.mots_message.append(mot)
+                    self.definitions[mot] = definition
                     break;
 
     def generate(self, taille):
@@ -357,6 +371,7 @@ class MotCroiseGenerator:
                     (grille, i) = grille.generation(3, ite)
                     if grille:
                         if grille.identifyLettresMessage() and grille.getScore() > 0.65:
+                            grille.addDefinition(self.definitions)
                             return grille
 
                         new_generations.append([grille, i])
@@ -387,4 +402,5 @@ if __name__ == "__main__":
 
     print([mot_secret, mc.getScore()])
 
-    mc.exportToSvg(file_prefixe + "grille.svg")
+    mc.exportGrilleToSvg(file_prefixe +"grille.svg")
+    mc.exportDefinitionToJSON(file_prefixe +"grille_mots_definitions.json")
