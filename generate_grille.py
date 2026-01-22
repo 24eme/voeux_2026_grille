@@ -27,6 +27,7 @@ class MotCroise:
         self.score_matrix = [0] * len(self.message)
         self.iteration_nb = 0
         self.profondeur = 0
+        self.extra_pos = []
         self.initScoreMatrix()
 
     def initScoreMatrix(self):
@@ -257,6 +258,25 @@ class MotCroise:
                     break;
         return (None, un_mot_croise.iteration_nb)
 
+    def generationExtra(self):
+        for forme_size in reversed(range(1, 4)):
+            size = forme_size + 2
+            for x in range(-1, self.grille_taille + 2):
+                for y in range(-1, self.grille_taille + 2):
+                    empty_ok = True
+                    for ix in range(size):
+                        for iy in range(size):
+                            try:
+                                if self.grille_yx[y + iy][x + ix] != ' ':
+                                    empty_ok = False
+                            except IndexError:
+                                empty_ok = False
+                    if empty_ok:
+                        self.extra_pos.append(['circle', x + 1, y + 1, forme_size])
+                        for ix in range(forme_size):
+                            for iy in range(forme_size):
+                                self.grille_yx[y + iy + 1][x + ix + 1] = '@'
+
     def exportGrilleToSvg(self, filename):
         cellule_taille = 50
         margin = 50
@@ -314,6 +334,10 @@ class MotCroise:
                     letter_y = y + cellule_taille / 2 + 10
                     letter_class = "letter secret mot"+str(self.msg_mot_id[(gx, gy)]) if est_lettre_secrete else "letter normal"
                     svg_content += f'    <text x="{letter_x}" y="{letter_y}" class="{letter_class}">{cellule}</text>\n'
+
+        for extra in self.extra_pos:
+            if extra[0] == 'circle':
+                svg_content += f'     <rect x="{ margin + extra[1] * cellule_taille }" y="{ margin + extra[2] * cellule_taille + 40}" height="{ extra[3] * cellule_taille }"  width="{ extra[3] * cellule_taille }"/>' #
 
         # Légende
         svg_content += '</svg>'
@@ -436,7 +460,15 @@ if __name__ == "__main__":
             mc = None
         size += 1
 
-    print([mot_secret, mc.getScore()])
+    if os.environ.get('DEBUG'):
+        print(mc.msg_positions)
+        mc.print()
 
+    print([mot_secret, mc.getScore(), gene.getExecutionTime()])
+
+    mc.generationExtra()
+
+    mc.print()
+    print([mc.extra_pos])
     mc.exportGrilleToSvg(file_prefixe +"grille.svg")
     mc.exportDefinitionToJSON(file_prefixe +"grille_mots_definitions.json")
