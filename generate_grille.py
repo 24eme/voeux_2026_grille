@@ -260,6 +260,32 @@ class MotCroise:
         return (None, un_mot_croise.iteration_nb)
 
     def generationExtra(self):
+        for y in range(5, self.grille_taille + 2):
+            if not len(self.extra_pos):
+                for x in range(5, self.grille_taille + 2):
+                    empty_ok = True
+                    iy = 0
+                    for iy in range(3):
+                        for ix in range(4):
+                            try:
+                                if self.grille_yx[y + iy][x + ix] != ' ':
+                                    empty_ok = False
+                            except IndexError:
+                                empty_ok = False
+                    iy += 1
+                    for ix in range(4):
+                        try:
+                            if self.grille_yx[y + iy][x + ix] == ' ' or self.grille_yx[y + iy][x + ix] == '@':
+                                empty_ok = False
+                        except IndexError:
+                            empty_ok = False
+
+                    if empty_ok:
+                        self.extra_pos.append(['patrick', x , y])
+                        for ix in range(4):
+                            for iy in range(3):
+                                self.grille_yx[y + iy][x + ix] = '@'
+                        break
         for forme_size in reversed(range(1, 6)):
             size = forme_size + 2
             for x in range(-1, self.grille_taille + 2):
@@ -273,7 +299,7 @@ class MotCroise:
                             except IndexError:
                                 empty_ok = False
                     if empty_ok:
-                        self.extra_pos.append(['circle', x + 0.5 + random.random(), y + 0.5 + random.random(), forme_size])
+                        self.extra_pos.append(['circle'+str(forme_size), x + 0.5 + random.random(), y + 0.5 + random.random(), forme_size])
                         for ix in range(forme_size):
                             for iy in range(forme_size):
                                 self.grille_yx[y + iy + 1][x + ix + 1] = '@'
@@ -299,7 +325,14 @@ class MotCroise:
                 .number {{ font-family: Arial; font-size: 12px; fill: #666; }}
                 .title {{ font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: middle; }}
             </style>
-
+            <defs>
+                <g id="circle1"><rect cx="0" cy="0" height="{ 1 * cellule_taille }" width="{ 1 * cellule_taille }" fill="red"/></g>
+                <g id="circle2"><rect cx="0" cy="0" height="{ 2 * cellule_taille }" width="{ 2 * cellule_taille }" fill="blue" /></g>
+                <g id="circle3"><rect cx="0" cy="0" height="{ 3 * cellule_taille }" width="{ 3 * cellule_taille }" fill="yellow"/></g>
+                <g id="circle4"><rect cx="0" cy="0" height="{ 4 * cellule_taille }" width="{ 4 * cellule_taille }" fill="greeen"/></g>
+                <g id="circle5"><rect cx="0" cy="0" height="{ 5 * cellule_taille }" width="{ 5 * cellule_taille }" fill="greeen"/></g>
+                <rect id="patrick" x="0" y="0" height="{ 3 * cellule_taille }"  width="{ 4 * cellule_taille }" fill="orange" />
+            </defs>
             <text x="{global_size/2}" y="30" class="title">Mots Croisés</text>
         '''
 
@@ -337,8 +370,7 @@ class MotCroise:
                     svg_content += f'    <text x="{letter_x}" y="{letter_y}" class="{letter_class}">{cellule}</text>\n'
 
         for extra in self.extra_pos:
-            if extra[0] == 'circle':
-                svg_content += f'     <rect x="{ margin + int(extra[1] * cellule_taille) }" y="{ margin + int(extra[2] * cellule_taille) + 40}" height="{ extra[3] * cellule_taille }"  width="{ extra[3] * cellule_taille }"/>' #
+                svg_content += f'       <use x="{ margin + int(extra[1] * cellule_taille) + 0.5 }" y="{ margin + int(extra[2] * cellule_taille) + 40 - 0.5}"  href="#{ extra[0] }" />' #
 
         # Légende
         svg_content += '</svg>'
