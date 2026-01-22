@@ -3,6 +3,7 @@ import json
 import copy
 import time
 import os
+import random
 
 class GrilleNotFoundException(Exception):
     pass
@@ -259,7 +260,7 @@ class MotCroise:
         return (None, un_mot_croise.iteration_nb)
 
     def generationExtra(self):
-        for forme_size in reversed(range(1, 4)):
+        for forme_size in reversed(range(1, 6)):
             size = forme_size + 2
             for x in range(-1, self.grille_taille + 2):
                 for y in range(-1, self.grille_taille + 2):
@@ -272,7 +273,7 @@ class MotCroise:
                             except IndexError:
                                 empty_ok = False
                     if empty_ok:
-                        self.extra_pos.append(['circle', x + 1, y + 1, forme_size])
+                        self.extra_pos.append(['circle', x + 0.5 + random.random(), y + 0.5 + random.random(), forme_size])
                         for ix in range(forme_size):
                             for iy in range(forme_size):
                                 self.grille_yx[y + iy + 1][x + ix + 1] = '@'
@@ -337,7 +338,7 @@ class MotCroise:
 
         for extra in self.extra_pos:
             if extra[0] == 'circle':
-                svg_content += f'     <rect x="{ margin + extra[1] * cellule_taille }" y="{ margin + extra[2] * cellule_taille + 40}" height="{ extra[3] * cellule_taille }"  width="{ extra[3] * cellule_taille }"/>' #
+                svg_content += f'     <rect x="{ margin + int(extra[1] * cellule_taille) }" y="{ margin + int(extra[2] * cellule_taille) + 40}" height="{ extra[3] * cellule_taille }"  width="{ extra[3] * cellule_taille }"/>' #
 
         # Légende
         svg_content += '</svg>'
