@@ -268,13 +268,13 @@ class MotCroise:
                 .cell {{ stroke: black; stroke-width: 1; fill: white; }}
                 .black {{ fill: #333; }}
                 .letter {{ font-family: Arial; font-size: 28px; font-weight: bold; text-anchor: middle; }}
-                // .secret {{ fill: #FF6B00; }}
-                .mot1 {{ fill: red; }}
-                .mot2 {{ fill: blue; }}
-                .mot3 {{ fill: green; }}
-                .mot4 {{ fill: orange; }}
-                .mot5 {{ fill: pink; }}
+                .cellmot1 {{ fill: red; }}
+                .cellmot2 {{ fill: blue; }}
+                .cellmot3 {{ fill: green; }}
+                .cellmot4 {{ fill: orange; }}
+                .cellmot5 {{ fill: pink; }}
                 .normal {{ fill: white; }}
+                text.secret {{ fill: white }}
                 .number {{ font-family: Arial; font-size: 12px; fill: #666; }}
                 .title {{ font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: middle; }}
             </style>
@@ -297,9 +297,13 @@ class MotCroise:
 
                 # Case
                 cell_class = "cell black" if cellule == ' ' else "cell"
-                svg_content += f'    <rect x="{x}" y="{y}" width="{cellule_taille}" height="{cellule_taille}" class="{cell_class}"/>\n'
+                if est_lettre_secrete:
+                    cell_class += " secret cellmot"+str(self.msg_mot_id[(gx, gy)])
 
-                if cellule != ' ':
+                if (cellule != ' ' and cellule != '@') or not len(self.extra_pos):
+                    svg_content += f'    <rect x="{x}" y="{y}" width="{cellule_taille}" height="{cellule_taille}" class="{cell_class}"/>\n'
+
+                if (cellule != ' ' and cellule != '@'):
                     # Numéro
                     if (gx, gy) in numeros_mots:
                         num = numeros_mots[(gx, gy)]
