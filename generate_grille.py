@@ -341,8 +341,8 @@ class MotCroise:
                 <g id="circle1"><rect cx="0" cy="0" height="{ 1 * cellule_taille }" width="{ 1 * cellule_taille }" fill="red"/></g>
                 <g id="circle2"><rect cx="0" cy="0" height="{ 2 * cellule_taille }" width="{ 2 * cellule_taille }" fill="blue" /></g>
                 <g id="circle3"><rect cx="0" cy="0" height="{ 3 * cellule_taille }" width="{ 3 * cellule_taille }" fill="yellow"/></g>
-                <g id="circle4"><rect cx="0" cy="0" height="{ 4 * cellule_taille }" width="{ 4 * cellule_taille }" fill="greeen"/></g>
-                <g id="circle5"><rect cx="0" cy="0" height="{ 5 * cellule_taille }" width="{ 5 * cellule_taille }" fill="greeen"/></g>
+                <g id="circle4"><rect cx="0" cy="0" height="{ 4 * cellule_taille }" width="{ 4 * cellule_taille }" fill="green"/></g>
+                <g id="circle5"><rect cx="0" cy="0" height="{ 5 * cellule_taille }" width="{ 5 * cellule_taille }" fill="gray"/></g>
                 <rect id="patrick" x="0" y="0" height="{ 3 * cellule_taille }"  width="{ 4 * cellule_taille }" fill="orange" />
             </defs>
             <text x="{global_size/2}" y="30" class="title">Mots Croisés</text>
