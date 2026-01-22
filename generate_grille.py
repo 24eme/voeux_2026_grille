@@ -286,23 +286,33 @@ class MotCroise:
                             for iy in range(3):
                                 self.grille_yx[y + iy][x + ix] = '@'
                         break
-        for forme_size in reversed(range(1, 6)):
-            size = forme_size + 2
+        possibilities = []
+        for forme_size in range(1, 6):
             for x in range(-1, self.grille_taille + 2):
                 for y in range(-1, self.grille_taille + 2):
-                    empty_ok = True
-                    for ix in range(size):
-                        for iy in range(size):
-                            try:
-                                if self.grille_yx[y + iy][x + ix] != ' ':
-                                    empty_ok = False
-                            except IndexError:
-                                empty_ok = False
-                    if empty_ok:
-                        self.extra_pos.append(['circle'+str(forme_size), x + 0.5 + random.random(), y + 0.5 + random.random(), forme_size])
-                        for ix in range(forme_size):
-                            for iy in range(forme_size):
-                                self.grille_yx[y + iy + 1][x + ix + 1] = '@'
+                    poids = forme_size
+                    if forme_size < 4:
+                        poids = random.random() * forme_size
+                    if poids > 0.75:
+                        possibilities.append((forme_size, x, y,  poids))
+
+        possibilities.sort(key=lambda x: x[3], reverse=True)
+
+        for (forme_size, x, y, rand) in possibilities:
+            size = forme_size + 2
+            empty_ok = True
+            for ix in range(size):
+                for iy in range(size):
+                    try:
+                        if self.grille_yx[y + iy][x + ix] != ' ':
+                            empty_ok = False
+                    except IndexError:
+                        empty_ok = False
+            if empty_ok:
+                self.extra_pos.append(['circle'+str(forme_size), x + 0.5 + random.random(), y + 0.5 + random.random(), forme_size])
+                for ix in range(forme_size):
+                    for iy in range(forme_size):
+                        self.grille_yx[y + iy + 1][x + ix + 1] = '@'
 
     def exportGrilleToSvg(self, filename):
         cellule_taille = 50
