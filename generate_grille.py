@@ -1,6 +1,14 @@
 import sys
 import json
 import copy
+import time
+import os
+
+class GrilleNotFoundException(Exception):
+    pass
+
+class GrilleTimeoutException(Exception):
+    pass
 
 class MotCroise:
 
@@ -324,6 +332,9 @@ class MotCroiseGenerator:
         self.message = ""
         self.mots_message = []
         self.definitions = {}
+        self.start_time = 0
+        self.end_time =  0
+
 
     def addMot(self, mot, definition):
         self.mots.append([mot.upper(), definition])
@@ -345,6 +356,8 @@ class MotCroiseGenerator:
 
     def generate(self, taille):
         grille_yx = []
+        self.start_time = time.time()
+        self.end_time = 0
         for x in range(taille):
             grille_yx.append([' ' for y in range(taille)])
 
@@ -372,14 +385,24 @@ class MotCroiseGenerator:
                     if grille:
                         if grille.identifyLettresMessage() and grille.getScore() > 0.65:
                             grille.addDefinition(self.definitions)
+                            self.end_time = time.time()
                             return grille
 
                         new_generations.append([grille, i])
 
-                        new_generations.sort(key=lambda x: x[0].getScore(), reverse=True)
-
-                generations = new_generations[:int(pas - (premiere_passe * pas / 2))]
+                new_generations.sort(key=lambda x: x[0].getScore(), reverse=True)
+                generations = new_generations[:pas - premiere_passe * int(pas / 10)]
                 premiere_passe = 1
+                if self.getExecutionTime() > 1:
+                    print(['Timeout', taille, (generations[0][0].identifyLettresMessage()), generations[0][0].getScore()])
+                    raise GrilleTimeoutException()
+        raise GrilleNotFoundException()
+
+    def getExecutionTime(self):
+        end = self.end_time
+        if not end:
+            end = time.time()
+        return (end - self.start_time) / 60
 
 
 if __name__ == "__main__":
@@ -395,10 +418,19 @@ if __name__ == "__main__":
     gene.loadJson("mots_principaux.json")
     gene.loadJson("mots_complementaires.json")
     gene.setMessage(mot_secret)
-    mc = gene.generate(25)
 
-    print(mc.msg_positions)
-    mc.print()
+    mc = None
+    size = 25
+    while (not mc):
+        try:
+            mc = gene.generate(size)
+        except GrilleNotFoundException:
+            print(["Not found"])
+            mc = None
+        except GrilleTimeoutException:
+            print(["Timeout", gene.getExecutionTime()])
+            mc = None
+        size += 1
 
     print([mot_secret, mc.getScore()])
 
