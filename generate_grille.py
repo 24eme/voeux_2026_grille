@@ -290,13 +290,15 @@ class MotCroise:
         for forme_size in range(1, 6):
             for x in range(-1, self.grille_taille + 2):
                 for y in range(-1, self.grille_taille + 2):
-                    poids = forme_size
+                    poids = forme_size + random.random()
                     if forme_size < 4:
                         poids = random.random() * forme_size
-                    if poids > 0.75:
+                    if poids > 0.6:
                         possibilities.append((forme_size, x, y,  poids))
 
         possibilities.sort(key=lambda x: x[3], reverse=True)
+
+        print(possibilities)
 
         for (forme_size, x, y, rand) in possibilities:
             size = forme_size + 2
