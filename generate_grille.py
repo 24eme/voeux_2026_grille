@@ -322,7 +322,7 @@ class MotCroise:
         global_size = self.grille_taille * cellule_taille + 2 * margin
 
         svg_content = f'''<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-        <svg width="{global_size}" height="{global_size + 50}" xmlns="http://www.w3.org/2000/svg">
+            <svg width="{global_size}" height="{global_size + 50}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg">
             <style>
                 .cell {{ stroke: black; stroke-width: 1; fill: white; }}
                 .black {{ fill: #333; }}
@@ -343,7 +343,7 @@ class MotCroise:
                 <g id="circle3"><rect cx="0" cy="0" height="{ 3 * cellule_taille }" width="{ 3 * cellule_taille }" fill="yellow"/></g>
                 <g id="circle4"><rect cx="0" cy="0" height="{ 4 * cellule_taille }" width="{ 4 * cellule_taille }" fill="green"/></g>
                 <g id="circle5"><rect cx="0" cy="0" height="{ 5 * cellule_taille }" width="{ 5 * cellule_taille }" fill="gray"/></g>
-                <rect id="patrick" x="0" y="0" height="{ 3 * cellule_taille }"  width="{ 4 * cellule_taille }" fill="orange" />
+                <g id="patrick"><rect x="0" y="0" height="{ 3 * cellule_taille }"  width="{ 4 * cellule_taille }" fill="orange"/></g>
             </defs>
             <text x="{global_size/2}" y="30" class="title">Mots Croisés</text>
         '''
