@@ -332,18 +332,25 @@ class MotCroise:
                 .cellmot3 {{ fill: green; }}
                 .cellmot4 {{ fill: orange; }}
                 .cellmot5 {{ fill: pink; }}
+                .color0 {{ fill: #ef3439 }}
+                .color1 {{ fill: #f57719 }}
+                .color2 {{ fill: #f7d927 }}
+                .color3 {{ fill: #39963a }}
+                .color4 {{ fill: #f3616a }}
+                .color5 {{ fill: #337195 }}
+                .color6 {{ fill: #4bafe1 }}
                 .normal {{ fill: white; }}
                 text.secret {{ fill: white }}
                 .number {{ font-family: Arial; font-size: 12px; fill: #666; }}
                 .title {{ font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: middle; }}
             </style>
             <defs>
-                <g id="circle1"><rect cx="0" cy="0" height="{ 1 * cellule_taille }" width="{ 1 * cellule_taille }" fill="red"/></g>
-                <g id="circle2"><rect cx="0" cy="0" height="{ 2 * cellule_taille }" width="{ 2 * cellule_taille }" fill="blue" /></g>
-                <g id="circle3"><rect cx="0" cy="0" height="{ 3 * cellule_taille }" width="{ 3 * cellule_taille }" fill="yellow"/></g>
-                <g id="circle4"><rect cx="0" cy="0" height="{ 4 * cellule_taille }" width="{ 4 * cellule_taille }" fill="green"/></g>
-                <g id="circle5"><rect cx="0" cy="0" height="{ 5 * cellule_taille }" width="{ 5 * cellule_taille }" fill="gray"/></g>
-                <g id="patrick"><rect x="0" y="0" height="{ 3 * cellule_taille }"  width="{ 4 * cellule_taille }" fill="orange"/></g>
+                <g id="circle1"><rect cx="0" cy="0" height="{ 1 * cellule_taille }" width="{ 1 * cellule_taille }"/></g>
+                <g id="circle2"><rect cx="0" cy="0" height="{ 2 * cellule_taille }" width="{ 2 * cellule_taille }" /></g>
+                <g id="circle3"><rect cx="0" cy="0" height="{ 3 * cellule_taille }" width="{ 3 * cellule_taille }"/></g>
+                <g id="circle4"><rect cx="0" cy="0" height="{ 4 * cellule_taille }" width="{ 4 * cellule_taille }"/></g>
+                <g id="circle5"><rect cx="0" cy="0" height="{ 5 * cellule_taille }" width="{ 5 * cellule_taille }"/></g>
+                <g id="patrick"><rect x="0" y="0" height="{ 3 * cellule_taille }"  width="{ 4 * cellule_taille }"/></g>
             </defs>
             <text x="{global_size/2}" y="30" class="title">Mots Croisés</text>
         '''
@@ -381,8 +388,11 @@ class MotCroise:
                     letter_class = "letter secret mot"+str(self.msg_mot_id[(gx, gy)]) if est_lettre_secrete else "letter normal"
                     svg_content += f'    <text x="{letter_x}" y="{letter_y}" class="{letter_class}">{cellule}</text>\n'
 
+        i = 0
+        self.extra_pos.sort(key=lambda x: x[2]*10000 + x[1])
         for extra in self.extra_pos:
-                svg_content += f'       <use x="{ margin + int(extra[1] * cellule_taille) + 0.5 }" y="{ margin + int(extra[2] * cellule_taille) + 40 - 0.5}"  href="#{ extra[0] }" />' #
+                i += 1
+                svg_content += f'       <use x="{ margin + int(extra[1] * cellule_taille) + 0.5 }" y="{ margin + int(extra[2] * cellule_taille) + 40 - 0.5}"  href="#{ extra[0] }" class="color{i % 7}"/>' #
 
         # Légende
         svg_content += '</svg>'
