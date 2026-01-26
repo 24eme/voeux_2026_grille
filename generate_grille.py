@@ -458,13 +458,13 @@ class MotCroiseGenerator:
         for i in range (0, len(premier_mot_possibles), pas):
             generations = premier_mot_possibles[i:i+pas-1]
 
-            premiere_passe = 0
+            nb_passe = 0
             while len(generations):
                 new_generations = []
                 for (grille, ite) in generations:
                     (grille, i) = grille.generation(3, ite)
                     if grille:
-                        if grille.identifyLettresMessage() and grille.getScore() > 0.65:
+                        if grille.identifyLettresMessage() and (nb_passe > 1 or (nb_passe > 0 and grille.getScore() > 0.5) or grille.getScore() > 0.65):
                             grille.addDefinition(self.definitions)
                             self.end_time = time.time()
                             return grille
@@ -472,11 +472,12 @@ class MotCroiseGenerator:
                         new_generations.append([grille, i])
 
                 new_generations.sort(key=lambda x: x[0].getScore(), reverse=True)
-                generations = new_generations[:pas - premiere_passe * int(pas / 10)]
-                premiere_passe = 1
-                if self.getExecutionTime() > 1:
+                generations = new_generations[:pas - nb_passe * int(pas / 10)]
+                if generations and self.getExecutionTime() > 1:
                     print(['Timeout', taille, (generations[0][0].identifyLettresMessage()), generations[0][0].getScore()])
-                    raise GrilleTimeoutException()
+                    if nb_passe > 1:
+                        raise GrilleTimeoutException()
+                nb_passe += 1
         raise GrilleNotFoundException()
 
     def getExecutionTime(self):
