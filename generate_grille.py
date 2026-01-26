@@ -514,14 +514,15 @@ if __name__ == "__main__":
             mc = None
         break
 
+    if not mc:
+        print([mot_secret, None, gene.getExecutionTime()])
+        exit(1)
+
     if os.environ.get('DEBUG'):
         print(mc.msg_positions)
         mc.print()
 
-    if mc:
-        print([mot_secret, mc.getScore(), gene.getExecutionTime()])
-    else:
-        print([mot_secret, None, gene.getExecutionTime()])
+    print([mot_secret, mc.getScore(), gene.getExecutionTime()])
 
     mc.generationExtra()
 
