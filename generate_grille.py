@@ -39,6 +39,9 @@ class MotCroise:
             max_y = min_y + int(self.grille_taille / (len(mots) + 1))
             min_x = 0
             for lettre in list(mot):
+                if lettre == '_':
+                    x += 1
+                    continue
                 max_x = min_x + int(self.grille_taille / (len(mot) + 1))
                 self.score_matrix[x] = [min_x, max_x, min_y, max_y]
                 min_x = max_x + 1
