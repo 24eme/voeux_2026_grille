@@ -455,37 +455,31 @@ class MotCroiseGenerator:
         premier_mot_possibles.sort(key=lambda x: x[0].getScore(True), reverse=True)
 
         pas = 10
+        timeout_nb = 0
         for i in range (0, len(premier_mot_possibles), pas):
             generations = premier_mot_possibles[i:i+pas-1]
 
-            nb_passe = 0
-            nb_timeout = 0
-            found = []
+            premiere_passe = 0
             while len(generations):
                 new_generations = []
                 for (grille, ite) in generations:
                     (grille, i) = grille.generation(3, ite)
                     if grille:
-                        if grille.identifyLettresMessage():
-                            found.append(grille)
-                            if (nb_passe > 1 or (nb_passe > 0 and grille.getScore() > 0.5) or grille.getScore() > 0.65):
-                                grille.addDefinition(self.definitions)
-                                self.end_time = time.time()
-                                return grille
+                        if grille.identifyLettresMessage() and (timeout_nb > 1 or (timeout_nb > 1 and grille.getScore() > 0.5) or grille.getScore() > 0.65):
+                            grille.addDefinition(self.definitions)
+                            self.end_time = time.time()
+                            return grille
 
                         new_generations.append([grille, i])
 
                 new_generations.sort(key=lambda x: x[0].getScore(), reverse=True)
-                generations = new_generations[:pas - nb_passe * int(pas / 10)]
-                if generations and self.getExecutionTime() > 1:
-                    print(['Timeout', taille, nb_timeout, (generations[0][0].identifyLettresMessage()), generations[0][0].getScore(), 'trouvé?', len(found)])
-                    if nb_timeout > 2:
-                        if len(found):
-                            found.sort(key=lambda x: x.getScore(), reverse=True)
-                            return found[0]
+                generations = new_generations[:pas - premiere_passe * int(pas / 10)]
+                premiere_passe = 1
+                if self.getExecutionTime() > 1:
+                    print(['Timeout', taille, (generations[0][0].identifyLettresMessage()), generations[0][0].getScore()])
+                    if timeout_nb > 1:
                         raise GrilleTimeoutException()
-                    nb_timeout += 1
-                nb_passe += 1
+                    timeout_nb += 1
         raise GrilleNotFoundException()
 
     def getExecutionTime(self):
