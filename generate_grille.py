@@ -147,12 +147,13 @@ class MotCroise:
                 break
             for y in range(self.grille_taille):
                 for x in range(debut, self.grille_taille):
-                    if l == ' ':
-                        l = lettres.pop(0)
+                    if l == ' ' or l == '_':
                         mot_id += 1
                         lettre_id += 1
                         self.nb_lettres_found += 1
-                        debut = 0
+                        if l == ' ':
+                            debut = 0
+                        l = lettres.pop(0)
                         break
                     if self.grille_yx[y][x] == ' ':
                         continue
@@ -475,9 +476,12 @@ class MotCroiseGenerator:
                 new_generations.sort(key=lambda x: x[0].getScore(), reverse=True)
                 generations = new_generations[:pas - premiere_passe * int(pas / 10)]
                 premiere_passe = 1
-                if self.getExecutionTime() > 1:
-                    print(['Timeout', taille, (generations[0][0].identifyLettresMessage()), generations[0][0].getScore()])
-                    if timeout_nb > 1:
+                if self.getExecutionTime() > (timeout_nb + 1):
+                    if len(generations):
+                        print(['Timeout', taille, (generations[0][0].identifyLettresMessage()), generations[0][0].getScore()])
+                    else:
+                        print(['Timeout', taille, None, None])
+                    if timeout_nb > 2:
                         raise GrilleTimeoutException()
                     timeout_nb += 1
         raise GrilleNotFoundException()
