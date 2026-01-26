@@ -298,8 +298,6 @@ class MotCroise:
 
         possibilities.sort(key=lambda x: x[3], reverse=True)
 
-        print(possibilities)
-
         for (forme_size, x, y, rand) in possibilities:
             size = forme_size + 2
             empty_ok = True
@@ -513,17 +511,21 @@ if __name__ == "__main__":
         except GrilleTimeoutException:
             print(["Timeout", gene.getExecutionTime()])
             mc = None
-        size += 1
+        break
 
     if os.environ.get('DEBUG'):
         print(mc.msg_positions)
         mc.print()
 
-    print([mot_secret, mc.getScore(), gene.getExecutionTime()])
+    if mc:
+        print([mot_secret, mc.getScore(), gene.getExecutionTime()])
+    else:
+        print([mot_secret, None, gene.getExecutionTime()])
 
     mc.generationExtra()
 
-    mc.print()
-    print([mc.extra_pos])
+    if os.environ.get('DEBUG'):
+        mc.print()
+
     mc.exportGrilleToSvg(file_prefixe +"grille.svg")
     mc.exportDefinitionToJSON(file_prefixe +"grille_mots_definitions.json")
