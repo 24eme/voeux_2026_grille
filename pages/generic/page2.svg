@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="148mm"
+   height="210mm"
+   viewBox="0 0 559.37006 793.70081"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="page2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.71271874"
+     inkscape:cx="282.01868"
+     inkscape:cy="420.92341"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="-90.413437"
+       y="-450.77557"
+       width="592.9209"
+       height="316.44702"
+       id="rect293" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern269"
+       preserveAspectRatio="xMidYMid"
+       id="pattern270"
+       patternTransform="matrix(0,-0.05,0.10833158,0,-186.85766,100.82453)"
+       x="-13"
+       y="0" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="100"
+       height="90"
+       patternTransform="scale(0.2)"
+       inkscape:stockid="Zig Zag"
+       id="pattern269"
+       style="fill:#0082cc"
+       x="0"
+       y="0"
+       preserveAspectRatio="none"
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       inkscape:label="Zig-zag">
+      <path
+         style="opacity:1;fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none"
+         d="M 50,90 0,40 V 10 L 50,60 100,10 V 40 L 50,90"
+         id="path268"
+         sodipodi:nodetypes="ccccccc" />
+    </pattern>
+    <rect
+       x="605.52692"
+       y="47.962372"
+       width="188.18147"
+       height="39.633057"
+       id="rect258-9" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern269-9"
+       preserveAspectRatio="xMidYMid"
+       id="pattern270-1"
+       patternTransform="matrix(-0.10900985,0,0,-0.05,-189.59275,0.39006925)"
+       x="0"
+       y="-41" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="100"
+       height="90"
+       patternTransform="scale(0.2)"
+       inkscape:stockid="Zig Zag"
+       id="pattern269-9"
+       style="fill:#0078bc"
+       x="0"
+       y="0"
+       preserveAspectRatio="none"
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       inkscape:label="Zig-zag">
+      <path
+         style="opacity:1;fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none"
+         d="M 50,90 0,40 V 10 L 50,60 100,10 V 40 L 50,90"
+         id="path268-6"
+         sodipodi:nodetypes="ccccccc" />
+    </pattern>
+    <rect
+       x="605.52692"
+       y="47.962372"
+       width="171.66426"
+       height="33.264942"
+       id="rect258" />
+    <rect
+       x="0"
+       y="767.66187"
+       width="39.722038"
+       height="13.988418"
+       id="rect3-7-0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Cubes"
+       preserveAspectRatio="none"
+       id="pattern228"
+       patternTransform="scale(0.4)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="142"
+       height="123"
+       patternTransform="scale(0.4)"
+       id="Cubes"
+       preserveAspectRatio="none"
+       style="fill:#000000"
+       x="0"
+       y="0"
+       inkscape:label="Cubes"
+       inkscape:collect="always"
+       inkscape:isstock="true">
+      <path
+         id="path224"
+         style="fill-opacity:0.6;stroke-width:2;stroke-miterlimit:10"
+         d="M 0.00195313,0.001953 V 0.0039061 L 35.509766,20.503906 71.009766,0.0078124 106.50977,20.503906 142,0.0136718 V 0.001953 Z" />
+      <path
+         id="path225"
+         style="fill-opacity:0.3;stroke-width:2;stroke-miterlimit:10"
+         d="m 35.503902,61.5 0.0039,0.002 v 41 L 0,123.00195 V 81.998047 Z M 142.01171,0 l 0.004,0.002 v 41 l -35.5079,20.499953 V 20.498047 Z m -71.000002,0 0.0039,0.002 v 41 L 35.507806,61.501953 V 20.498047 Z m 35.492192,61.5 0.004,0.002 v 41 L 71,123.00195 V 81.998047 Z" />
+      <path
+         id="path226"
+         style="fill-opacity:1;stroke-width:2;stroke-miterlimit:10"
+         d="m 106.49609,61.5 -0.004,0.002 v 41 L 142,123.00195 V 81.998047 Z M 71.0039,0 71,0.002 v 41 l 35.50781,20.499953 V 20.498047 Z m -71,0 L 0,0.002 v 41 L 35.507806,61.501953 V 20.498047 Z m 35.492194,61.5 -0.0039,0.002 v 41 L 71,123.00195 V 81.998047 Z" />
+      <path
+         id="path227"
+         style="fill-opacity:0.6;stroke-width:2;stroke-miterlimit:10"
+         d="m 70.998047,41.001953 -35.5,20.496094 L 0,41.003906 v 40.998047 l 0.00195313,0.002 35.49999987,-20.496094 35.5,20.496094 L 106.50195,61.507812 142,82.001953 V 41.003906 l -0.002,-0.002 -35.5,20.496094 z" />
+      <path
+         id="path228"
+         style="fill-opacity:0.6;stroke-width:2;stroke-miterlimit:10"
+         d="M 35.505859,102.50195 0.00195313,123 v 0.002 H 142 v -0.008 l -35.49414,-20.49219 -35.500001,20.49609 z" />
+    </pattern>
+    <rect
+       x="649.35974"
+       y="19.513313"
+       width="208.85429"
+       height="39.93816"
+       id="rect2" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Cubes"
+       preserveAspectRatio="none"
+       id="pattern1"
+       patternTransform="scale(0.4)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Cubes"
+       preserveAspectRatio="none"
+       id="pattern6"
+       patternTransform="scale(0.4)" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff6a00;stroke-width:0.377953;stroke-opacity:1"
+       id="rect291"
+       width="559.37006"
+       height="793.70081"
+       x="0.1889765"
+       y="0.1889765" />
+    <text
+       xml:space="preserve"
+       transform="matrix(2.8076326,0,0,3.9797503,251.16327,2361.4313)"
+       id="text292"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.3;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect293);display:inline;opacity:0.2;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.377953;stroke-opacity:1"><tspan
+         x="-90.414062"
+         y="-394.71139"
+         id="tspan12">24EME</tspan></text>
+    <g
+       id="g22"
+       transform="matrix(3.7795276,0,0,3.7795276,-572.20893,3.083414)"
+       style="display:inline">
+      <rect
+         style="opacity:0.5597;fill:url(#pattern270);fill-rule:nonzero;stroke:none;stroke-width:0.147195;stroke-opacity:1"
+         id="rect259"
+         width="131.41411"
+         height="14.647612"
+         x="159.73988"
+         y="111.28503"
+         inkscape:label="fond_horiz" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,41.136245,102.75635)"
+         id="text258-0"
+         style="font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect258-9);display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#0483cc;stroke-width:7.55906;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+         inkscape:label="text_horiz"><tspan
+           x="605.52734"
+           y="68.386891"
+           id="tspan13">Horizontalement</tspan></text>
+    </g>
+    <g
+       id="g21"
+       transform="matrix(3.7795276,0,0,3.7795276,-572.20893,27.717509)">
+      <rect
+         style="font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect258);display:inline;opacity:0.623824;fill:url(#pattern270-1);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.147655;stroke-opacity:1"
+         id="rect259-8"
+         width="132.23689"
+         height="14.647612"
+         x="159.17491"
+         y="10.850558"
+         inkscape:label="fond_verti" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,45.618164,2.3218808)"
+         id="text258"
+         style="font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect258);display:inline;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#0078bc;stroke-width:7.55906;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         inkscape:label="text_verti"><tspan
+           x="605.52734"
+           y="68.386891"
+           id="tspan15"><tspan
+             style="opacity:1"
+             id="tspan14">Verticalement</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       id="text1-5-2"
+       style="font-size:10.6667px;font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3-7-0);display:inline;fill:#000000;stroke-width:0"
+       transform="translate(522.04277,5.544754)"
+       inkscape:label="page 2/4"><tspan
+         x="0"
+         y="777.36748"
+         id="tspan16">2 / 4</tspan></text>
+    <g
+       id="g35"
+       transform="matrix(3.7795276,0,0,3.7795276,-572.20893,356.18908)">
+      <rect
+         style="font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect258-5);display:inline;opacity:0.623824;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.147655;stroke-opacity:1"
+         id="rect34"
+         width="132.23689"
+         height="14.647612"
+         x="159.17491"
+         y="10.850558"
+         inkscape:label="fond_verti"
+         transform="matrix(1,0,0,5.0382106,0.00584454,-19.424969)" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect34);display:inline;opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+         x="158.81889"
+         y="39.590187"
+         id="text34"><tspan
+           x="159.18164"
+           y="39.129107"
+           id="tspan18"><tspan
+             style="font-weight:normal;font-family:P052;-inkscape-font-specification:P052;fill:#000000"
+             id="tspan17">%MOTS_HORIZ%</tspan></tspan></text>
+    </g>
+    <g
+       id="g34"
+       transform="matrix(3.7795276,0,0,3.7795276,-572.20893,1.228344)">
+      <rect
+         style="font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect258-5);display:inline;opacity:0.623824;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.147655;stroke-opacity:1"
+         id="rect259-8-4"
+         width="132.23689"
+         height="14.647612"
+         x="159.17491"
+         y="10.850558"
+         inkscape:label="fond_verti"
+         transform="matrix(1,0,0,5.0382106,0.00584454,-19.424969)" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect259-8-4);display:inline;opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+         x="158.81889"
+         y="39.590187"
+         id="text4"><tspan
+           x="159.18164"
+           y="39.129107"
+           id="tspan20"><tspan
+             style="font-weight:normal;font-family:P052;-inkscape-font-specification:P052;fill:#000000"
+             id="tspan19">%MOTS_VERTI%</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       id="text2"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.736px;font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable';text-align:end;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:none;stroke:url(#pattern228);stroke-width:0;stroke-dasharray:none"
+       transform="matrix(1.2146433,0,0,1.2146433,-513.23489,-7.917476)"
+       x="236.02177"
+       y="0"><tspan
+         x="682.68153"
+         y="47.479596"
+         id="tspan22"><tspan
+           style="font-weight:bold;font-family:P052;-inkscape-font-specification:P052;fill:#000000"
+           id="tspan21">Mots croisés </tspan></tspan></text>
+  </g>
+</svg>
