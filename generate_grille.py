@@ -53,7 +53,7 @@ class MotCroise:
         self.mots.remove(mot)
 
     def setPositionMot(self, mot, position_x, position_y, orientation):
-        self.mots_selectionnes.append([position_y * self.grille_taille + position_x, mot, position_x, position_y])
+        self.mots_selectionnes.append([position_y * self.grille_taille + position_x, mot, position_x, position_y, orientation])
         self.mots_nb += 1
         if orientation == 'H':
             for mot_x in (range(len(mot))):
@@ -402,7 +402,7 @@ class MotCroise:
         self.mots_selectionnes.sort(key=lambda x:x[0])
         json_data = []
         for i in range(len(self.mots_selectionnes)):
-            json_data.append({'mot_id': i, 'mot': self.mots_selectionnes[i][1], 'definition': self.definitions.get(self.mots_selectionnes[i][1], "ma définition")})
+            json_data.append({'ordre': '%s%03d' % (self.mots_selectionnes[i][4], i), 'mot_id': i + 1, 'mot': self.mots_selectionnes[i][1], 'definition': self.definitions.get(self.mots_selectionnes[i][1], "ma définition"),  'orientation': self.mots_selectionnes[i][4] })
         with open(filename, 'w') as f:
             json.dump(json_data, f)
 
