@@ -460,6 +460,7 @@ class MotCroiseGenerator:
 
         pas = 10
         timeout_nb = 0
+        found = []
         for i in range (0, len(premier_mot_possibles), pas):
             generations = premier_mot_possibles[i:i+pas-1]
 
@@ -469,11 +470,13 @@ class MotCroiseGenerator:
                 for (grille, ite) in generations:
                     (grille, i) = grille.generation(3, ite)
                     if grille:
-                        if grille.identifyLettresMessage() and (timeout_nb > 1 or (timeout_nb > 1 and grille.getScore() > 0.5) or grille.getScore() > 0.65):
-                            grille.addDefinition(self.definitions)
-                            self.end_time = time.time()
-                            return grille
-
+                        if grille.identifyLettresMessage():
+                            score = grille.getScore()
+                            if timeout_nb > 1 or (timeout_nb > 0 and score > 0.5) or score > 0.65:
+                                grille.addDefinition(self.definitions)
+                                self.end_time = time.time()
+                                return grille
+                            found.append(grille)
                         new_generations.append([grille, i])
 
                 new_generations.sort(key=lambda x: x[0].getScore(), reverse=True)
@@ -484,6 +487,14 @@ class MotCroiseGenerator:
                         print(['Timeout', taille, (generations[0][0].identifyLettresMessage()), generations[0][0].getScore()])
                     else:
                         print(['Timeout', taille, None, None])
+                    if len(found):
+                        found.sort(key=lambda x: x.getScore(), reverse=True)
+                        grille = found[0]
+                        score = grille.getScore()
+                        if timeout_nb > 0 or score > 0.5:
+                            grille.addDefinition(self.definitions)
+                            self.end_time = time.time()
+                            return grille
                     if timeout_nb > 2:
                         raise GrilleTimeoutException()
                     timeout_nb += 1
