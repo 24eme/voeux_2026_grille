@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showguides="true"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="847.11391"
-     inkscape:cy="841.45706"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="1047.0484"
+     inkscape:cy="777.11034"
      inkscape:window-width="1728"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -43,7 +43,7 @@
        id="page312"
        margin="0"
        bleed="0"
-       inkscape:export-filename="Page 2.svg"
+       inkscape:export-filename="page4.svg"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" /><sodipodi:guide
        position="37.169495,3.1330428"
@@ -1617,7 +1617,7 @@
            transform="rotate(180,224.09717,174.93821)"><tspan
              x="153.35742"
              y="138.2139"
-             id="tspan128">%solutions%</tspan></text><g
+             id="tspan128">%SOLUTIONS%</tspan></text><g
            id="g20"
            inkscape:label="titre_solutions"
            transform="matrix(1.4189077,0.11999938,-0.11999938,1.4189077,-27.317568,141.17499)"
