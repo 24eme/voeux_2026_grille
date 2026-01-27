@@ -7,7 +7,7 @@
    viewBox="0 0 559.37006 793.70081"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    sodipodi:docname="page2.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,14 +24,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.71271874"
-     inkscape:cx="282.72022"
-     inkscape:cy="420.22187"
-     inkscape:window-width="1920"
-     inkscape:window-height="1051"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:zoom="2.015873"
+     inkscape:cx="419.6693"
+     inkscape:cy="150.80315"
+     inkscape:window-width="1207"
+     inkscape:window-height="276"
+     inkscape:window-x="-556"
+     inkscape:window-y="247"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
@@ -257,7 +257,7 @@
          y="39.590187"
          id="text34"><tspan
            x="159.18164"
-           y="39.156845"
+           y="38.983786"
            id="tspan6"><tspan
              style="font-weight:normal;font-family:P052;-inkscape-font-specification:P052;fill:#000000"
              id="tspan5">%MOTS_HORIZ%</tspan></tspan></text>
@@ -281,7 +281,7 @@
          y="39.590187"
          id="text4"><tspan
            x="159.18164"
-           y="39.156845"
+           y="38.983786"
            id="tspan8"><tspan
              style="font-weight:normal;font-family:P052;-inkscape-font-specification:P052;fill:#000000"
              id="tspan7">%MOTS_VERTI%</tspan></tspan></text>
@@ -289,14 +289,15 @@
     <text
        xml:space="preserve"
        id="text2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.736px;font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable';text-align:end;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:none;stroke:url(#pattern228);stroke-width:0;stroke-dasharray:none"
-       transform="matrix(1.2146433,0,0,1.2146433,-513.23489,-7.917476)"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.1164px;font-family:P052;-inkscape-font-specification:'P052, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:none;stroke:url(#pattern228);stroke-width:0;stroke-dasharray:none"
+       transform="matrix(1.2146433,0,0,1.2146433,-497.23489,-6.2785357)"
        x="236.02177"
-       y="0"><tspan
-         x="682.68153"
-         y="47.964318"
+       y="0"
+       inkscape:label="text2"><tspan
+         x="680.50907"
+         y="45.80703"
          id="tspan10"><tspan
-           style="font-weight:bold;font-family:P052;-inkscape-font-specification:P052;fill:#000000"
+           style="fill:#000000"
            id="tspan9">Mots croisés </tspan></tspan></text>
   </g>
 </svg>
