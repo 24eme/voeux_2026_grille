@@ -4,6 +4,8 @@ import copy
 import time
 import os
 import random
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+import multiprocessing
 
 class GrilleNotFoundException(Exception):
     pass
@@ -478,17 +480,21 @@ class MotCroiseGenerator:
             premiere_passe = 0
             while len(generations):
                 new_generations = []
-                for (grille, ite) in generations:
-                    (grille, i) = grille.generation(3, ite)
-                    if grille:
-                        if grille.identifyLettresMessage():
-                            score = grille.getScore()
-                            if timeout_nb > 1 or (timeout_nb > 0 and score > 0.5) or score > 0.65:
-                                grille.addDefinition(self.definitions)
-                                self.end_time = time.time()
-                                return grille
-                            found.append(grille)
-                        new_generations.append([grille, i])
+                with ProcessPoolExecutor(max_workers=multiprocessing.cpu_count()) as executor:
+                    futures = []
+                    for (grille, ite) in generations:
+                        futures.append(executor.submit(grille.generation, 5, ite))
+                    for f in futures:
+                        (grille, i) = f.result()
+                        if grille:
+                            if grille.identifyLettresMessage():
+                                score = grille.getScore()
+                                if timeout_nb > 1 or (timeout_nb > 0 and score > 0.5) or score > 0.65:
+                                    grille.addDefinition(self.definitions)
+                                    self.end_time = time.time()
+                                    return grille
+                                found.append(grille)
+                            new_generations.append([grille, i])
 
                 new_generations.sort(key=lambda x: x[0].getScore(), reverse=True)
                 generations = new_generations[:pas - premiere_passe * int(pas / 10)]
