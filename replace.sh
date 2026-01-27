@@ -15,9 +15,14 @@ DESTINATAIRE="$5"
 JSON_MOTS="${PREFIX}_grille_mots_definitions.json"
 GRILLE="${PREFIX}_grille.svg"
 
-python3 generate_grille.py "$MESSAGE" "${PREFIX}_"
+if python3 generate_grille.py "$MESSAGE" "${PREFIX}_"; then
 sed -i -f motifs.sed "$GRILLE"
+fi
 
+if ! test -f $GRILLE ; then
+  echo "$GRILLE not found"
+  exit 5;
+fi
 
 if [ ! -f "${PATH_PAGES}/page1.svg" ]; then
   echo "page1.svg not found!"
@@ -26,17 +31,17 @@ fi
 
 if [ ! -f "${PATH_PAGES}/page2.svg" ]; then
   echo "page2.svg not found!"
-  exit 1
+  exit 2
 fi
 
 if [ ! -f "${PATH_PAGES}/page3.svg" ]; then
   echo "page3.svg not found!"
-  exit 1
+  exit 3
 fi
 
 if [ ! -f "${PATH_PAGES}/page4.svg" ]; then
   echo "page4.svg not found!"
-  exit 1
+  exit 4
 fi
 
 mkdir -p "tmp/$DESTINATAIRE"
