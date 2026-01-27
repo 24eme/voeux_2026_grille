@@ -29,6 +29,8 @@ class MotCroise:
         self.iteration_nb = 0
         self.profondeur = 0
         self.extra_pos = []
+        self.score_impact = {}
+        self.xy2mot = {}
         self.initScoreMatrix()
 
     def initScoreMatrix(self):
@@ -52,6 +54,9 @@ class MotCroise:
     def addDefinition(self, definitions):
         self.definitions = definitions
 
+    def setScoreImpact(self, si):
+        self.score_impact = si
+
     def removeMot(self, mot):
         self.mots.remove(mot)
 
@@ -61,10 +66,12 @@ class MotCroise:
         if orientation == 'H':
             for mot_x in (range(len(mot))):
                 self.grille_yx[position_y][mot_x + position_x] = mot[mot_x]
+                self.xy2mot[(mot_x + position_x, position_y)] = mot
             return
         if orientation == 'V':
             for mot_y in (range(len(mot))):
                 self.grille_yx[position_y + mot_y][position_x] = mot[mot_y]
+                self.xy2mot[(position_x, position_y + mot_y)] = mot
             return
         raise Exception('unknown orientation '+orientation)
 
@@ -188,6 +195,7 @@ class MotCroise:
                             if [x,b] in self.msg_positions:
                                 score_penalite -= score_to_add
                         self.score += score_to_add + score_penalite
+                        self.score *= self.score_impact[self.xy2mot[(x,y)]]
                         if debug:
                             print({'lettre': l, 'min_x': min_x, 'x': x, 'max_x': max_x, 'min_y': min_y, 'y': y, 'max_y': max_y, 'score_to_add': score_to_add, 'score_penalite': score_penalite, 'score': self.score})
                         self.nb_lettres_found += 1
@@ -417,26 +425,28 @@ class MotCroiseGenerator:
         self.message = ""
         self.mots_message = []
         self.definitions = {}
+        self.score_impacts = {}
         self.start_time = 0
         self.end_time =  0
 
 
-    def addMot(self, mot, definition):
-        self.mots.append([mot.upper(), definition])
+    def addMot(self, mot, definition, score_impact=1):
+        self.mots.append([mot.upper(), definition, score_impact])
 
-    def loadJson(self, json_file):
+    def loadJson(self, json_file, score_impact=1):
         with open(json_file) as f:
             mots = json.load(f)
             for m in mots:
-                self.addMot(m, mots[m])
+                self.addMot(m, mots[m], score_impact)
 
     def setMessage(self, msg):
         self.message = msg
-        for (mot,definition) in self.mots:
+        for (mot,definition,score_impact) in self.mots:
             for lettre in self.message:
                 if lettre in mot:
                     self.mots_message.append(mot)
                     self.definitions[mot] = definition
+                    self.score_impacts[mot] = score_impact
                     break;
 
     def generate(self, taille):
@@ -449,6 +459,7 @@ class MotCroiseGenerator:
         self.mots_message.sort(key=lambda s: len(s), reverse=True)
 
         empty_mot_croise = MotCroise(grille_yx, self.mots_message, self.message)
+        empty_mot_croise.setScoreImpact(self.score_impacts)
         premier_mot_possibles = []
         for premier_mot in self.mots_message:
             mc = copy.deepcopy(empty_mot_croise)
@@ -517,7 +528,7 @@ if __name__ == "__main__":
         mot_secret=sys.argv[1].upper()
 
     gene = MotCroiseGenerator()
-    gene.loadJson("mots_principaux.json")
+    gene.loadJson("mots_principaux.json", 1.1)
     gene.loadJson("mots_complementaires.json")
     gene.setMessage(mot_secret)
 
