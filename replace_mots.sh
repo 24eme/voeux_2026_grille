@@ -36,9 +36,9 @@ MOTS_HORIZ=$(jq -r '.[] | select(.orientation=="H") | "\(.mot_id). \(.definition
 SOLUTIONS=$(jq -r '.[] | "\(.mot_id). \(.mot)"' "$JSON_MOTS" | tr "\n" ' ')
 
 mkdir -p "/tmp/$DESTINATAIRE"
-sed -e "s/%MOTS_VERTI%/$MOTS_VERTI/" -e "s/%MOTS_HORIZ%/$MOTS_HORIZ/" ${PATH_PAGES}page2.svg > /tmp/$DESTINATAIRE/page2.svg
-sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}page4.svg > /tmp/$DESTINATAIRE/page4.svg
+sed -e "s/%MOTS_VERTI%/$MOTS_VERTI/" -e "s/%MOTS_HORIZ%/$MOTS_HORIZ/" ${PATH_PAGES}page2.svg > /tmp/"$DESTINATAIRE"/page2.svg
+sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}page4.svg > /tmp/"$DESTINATAIRE"/page4.svg
 
 mkdir -p "./output/$DESTINATAIRE"
-inkscape -o "./output/$DESTINATAIRE"/page2.svg /tmp/$DESTINATAIRE/page2.svg
-inkscape -o "./output/$DESTINATAIRE"/page4.svg /tmp/$DESTINATAIRE/page4.svg
+inkscape -o "./output/$DESTINATAIRE"/page2.svg /tmp/"$DESTINATAIRE"/page2.svg
+inkscape -o "./output/$DESTINATAIRE"/page4.svg /tmp/"$DESTINATAIRE"/page4.svg

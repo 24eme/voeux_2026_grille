@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showguides="true"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="847.11391"
-     inkscape:cy="841.45706"
+     inkscape:zoom="0.70710679"
+     inkscape:cx="820.95096"
+     inkscape:cy="408.70772"
      inkscape:window-width="1728"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -43,7 +43,7 @@
        id="page311"
        margin="0"
        bleed="0"
-       inkscape:export-filename="Page 2.svg"
+       inkscape:export-filename="page1.svg"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" /><sodipodi:guide
        position="195.16949,3.1330428"
@@ -1566,5 +1566,5 @@
            x="212.84302"
            y="557.632"
            id="tspan5"><tspan
-             style="font-weight:bold;font-size:32px;font-family:Serif;-inkscape-font-specification:'Serif, Bold'"
+             style="font-weight:bold;font-size:32px;font-family:Serif;-inkscape-font-specification:'Serif, Bold';text-transform:uppercase"
              id="tspan1">%NOM%</tspan></tspan></text></g></g></svg>
