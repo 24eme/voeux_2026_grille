@@ -362,7 +362,6 @@ class MotCroise:
                 <g id="circle5"><rect cx="0" cy="0" height="{ 5 * cellule_taille }" width="{ 5 * cellule_taille }"/></g>
                 <g id="patrick"><rect x="0" y="0" height="{ 3 * cellule_taille }"  width="{ 4 * cellule_taille }"/></g>
             </defs>
-            <text x="{global_size/2}" y="30" class="title">Mots Croisés</text>
         '''
 
         numeros_mots = {}
@@ -374,7 +373,7 @@ class MotCroise:
         for gx in range(self.grille_taille):
             for gy in range(self.grille_taille):
                 x = margin + gx * cellule_taille
-                y = margin + gy * cellule_taille + 40  # Décalage pour le titre
+                y = margin + gy * cellule_taille
                 cellule = self.grille_yx[gy][gx]
                 est_lettre_secrete = [gx, gy] in self.msg_positions
 
@@ -402,7 +401,7 @@ class MotCroise:
         self.extra_pos.sort(key=lambda x: x[2]*10000 + x[1])
         for extra in self.extra_pos:
                 i += 1
-                svg_content += f'       <use x="{ margin + int(extra[1] * cellule_taille) + 0.5 }" y="{ margin + int(extra[2] * cellule_taille) + 40 - 0.5}"  href="#{ extra[0] }" class="color{i % 7}"/>' #
+                svg_content += f'       <use x="{ margin + int(extra[1] * cellule_taille) + 0.5 }" y="{ margin + int(extra[2] * cellule_taille) - 0.5}"  href="#{ extra[0] }" class="color{i % 7}"/>' #
 
         # Légende
         svg_content += '</svg>'
