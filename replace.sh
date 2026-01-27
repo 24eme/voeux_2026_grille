@@ -39,9 +39,9 @@ if [ ! -f "${PATH_PAGES}/page4.svg" ]; then
   exit 1
 fi
 
-mkdir -p "/tmp/$DESTINATAIRE"
+mkdir -p "tmp/$DESTINATAIRE"
 
-sed "s/%NOM%/$DESTINATAIRE/" ${PATH_PAGES}/page1.svg > /tmp/"$DESTINATAIRE"/page1.svg
+sed "s/%NOM%/$DESTINATAIRE/" ${PATH_PAGES}/page1.svg > tmp/"$DESTINATAIRE"/page1.svg
 
 MOTS_VERTI=$(jq -r '.[] | select(.orientation=="V") | "\(.mot_id). \(.definition)"' "$JSON_MOTS" | tr "\n" '|' | sed 's/|/\\n/g')
 
@@ -57,7 +57,7 @@ sed '/%GRILLE%/Q' ${PATH_PAGES}/page3.svg > tmp/"$DESTINATAIRE"/page3.svg
 sed '1d' $GRILLE >> tmp/"$DESTINATAIRE"/page3.svg
 sed '1,/%GRILLE%/d' ${PATH_PAGES}/page3.svg >> tmp/"$DESTINATAIRE"/page3.svg
 
-sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}/page4.svg > /tmp/"$DESTINATAIRE"/page4.svg
+sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}/page4.svg > tmp/"$DESTINATAIRE"/page4.svg
 
 
 
