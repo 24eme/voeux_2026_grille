@@ -1,22 +1,28 @@
 #!/bin/bash
 ARGC=$#
+MIN_ARGS=4
 MAX_ARGS=5
 
-if [ "$ARGC" -ne "$MAX_ARGS" ]; then
-  echo "Usage: bash replace_mots.sh <MESSAGE> <PREFIX_> <dictionnaire> <chemin/vers/pages/> <nom_destinataire>"
+if [ "$ARGC" -lt "$MIN_ARGS" ] || [ "$ARGC" -gt "$MAX_ARGS" ]; then
+  echo "Usage: bash replace_mots.sh <MESSAGE> <PREFIX_> <chemin/vers/pages/> <nom_destinataire> [dictionnaire]"
   exit 1
 fi
 
 MESSAGE="$1"
 PREFIX="$2"
-DICTIONNAIRE="$3"
-PATH_PAGES="$4"
-DESTINATAIRE="$5"
+PATH_PAGES="$3"
+DESTINATAIRE="$4"
+
+DICTIONNAIRE=""
+if [ "$ARGC" -eq 5 ]; then
+  DICTIONNAIRE="$5"
+fi
+
 JSON_MOTS="${PREFIX}_grille_mots_definitions.json"
 GRILLE="${PREFIX}_grille.svg"
 
-if python3 generate_grille.py "$MESSAGE" "${PREFIX}_"; then
-sed -i -f motifs.sed "$GRILLE"
+if python3 generate_grille.py "$MESSAGE" "${PREFIX}_" ${DICTIONNAIRE:+ "$DICTIONNAIRE"}; then
+  sed -i -f motifs.sed "$GRILLE"
 fi
 
 if ! test -f $GRILLE ; then
