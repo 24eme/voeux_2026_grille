@@ -5,9 +5,16 @@
 
 On obtient PREFIX_grille.svg la grille avec les inserts extra (logos / photo) et PREFIX_grille_mots_definitions.json qui contient les numéros des mots, les mots et leurs définitions.
 
+Pour générer les pages au format PDF, il faut lancer la commande suivante :
+
+    bash replace_mots.sh PREFIX_grille_mots_definitions.json pages/[nom du template]/ PREFIX
+
+les fichiers sont placés dans le dossier `output/PREFIX/`
+
 ### Impression au format booklet
 
 Paquets requis : [a5toa4](https://packages.debian.org/bullseye/texlive-extra-utils) et [pdftk](https://packages.debian.org/bullseye/pdftk)
+
 Potentiellement, l'erreur `I can't find the format file ``pdflatex.fmt'!` apparait et il faut ajouter des paquets latex supplémentaires
 
 Concatener les 4 pages dans un seul fichier via pdftk :
