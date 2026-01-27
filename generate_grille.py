@@ -523,9 +523,12 @@ if __name__ == "__main__":
     mot_secret="BONNE ANNEE JESUS"
     file_prefixe = ''
     if len(sys.argv) > 2:
-        file_prefixe=sys.argv[2].upper()
+        file_prefixe=sys.argv[2]
     if len(sys.argv) > 1:
-        mot_secret=sys.argv[1].upper()
+        mot_secret=sys.argv[1]
+
+    if mot_secret != mot_secret.upper():
+        raise Exception("Mot secret doit être en majuscule (sans accent)")
 
     gene = MotCroiseGenerator()
     gene.loadJson("mots_principaux.json", 1.1)
