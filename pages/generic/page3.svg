@@ -140,32 +140,26 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"><rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff6a00;stroke-width:0.377953;stroke-opacity:1"
-       id="rect291"
-       width="559.37006"
-       height="793.70081"
-       x="0.1889765"
-       y="0.1889765" /><text
-       xml:space="preserve"
-       id="text1-5-2"
-       style="font-size:10.6667px;font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3-7-0);display:inline;fill:#000000;stroke-width:0"
-       transform="translate(522.04277,5.544754)"
-       inkscape:label="page 2/4"><tspan
-         x="0"
-         y="777.36748"
-         id="tspan1">2 / 4</tspan></text><text
-       xml:space="preserve"
-       id="text2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.736px;font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable';text-align:end;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);shape-padding:0;display:inline;fill:none;stroke:url(#pattern228);stroke-width:0;stroke-dasharray:none"
-       transform="matrix(1.2146433,0,0,1.2146433,-759.23489,-7.917476)"
-       x="26.402262"
-       y="0"><tspan
-         x="649.35938"
-         y="47.479596"
-         id="tspan3"><tspan
-           style="font-weight:bold;font-family:P052;-inkscape-font-specification:P052;text-align:start;fill:#000000"
-           id="tspan2">de l'année 2026</tspan></tspan></text>
+   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff6a00;stroke-width:0.377953;stroke-opacity:1"
+   id="rect291"
+   width="559.37006"
+   height="793.70081"
+   x="0.1889765"
+   y="0.1889765" /><text
+   xml:space="preserve"
+   id="text2"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.736px;font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable';text-align:end;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);shape-padding:0;display:inline;fill:none;stroke:url(#pattern228);stroke-width:0;stroke-dasharray:none"
+   transform="matrix(1.2146433,0,0,1.2146433,-759.23489,-7.917476)"
+   x="26.402262"
+   y="0"><tspan
+     x="649.35938"
+     y="46.707828"
+     id="tspan4"><tspan
+       style="font-weight:bold;font-family:P052;-inkscape-font-specification:P052;text-align:start;fill:#000000"
+       id="tspan1">de l'année 2026</tspan></tspan></text>
+       <g id="g1" transform="matrix(0.37589988,0,0,0.41207129,33.84652,118.07853)">
             %GRILLE%
+          </g>
            </g><style
      id="style1">
                 .cell { stroke: black; stroke-width: 1; fill: white; }
@@ -176,6 +170,7 @@
                 .cellmot3 { fill: green; }
                 .cellmot4 { fill: orange; }
                 .cellmot5 { fill: pink; }
+                .cellmot6 { fill: #B10DC9 }
                 .color0 { fill: #ef3439 }
                 .color1 { fill: #f57719 }
                 .color2 { fill: #f7d927 }
