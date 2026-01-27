@@ -1,17 +1,23 @@
 #!/bin/bash
-
 ARGC=$#
-MAX_ARGS=4
+MAX_ARGS=5
 
 if [ "$ARGC" -ne "$MAX_ARGS" ]; then
-  echo "Usage: bash replace_mots.sh <PREFIX_grille_mots_definitions.json> <chemin/vers/pages/> <nom_destinataire> <path/vers/grille.svg>"
+  echo "Usage: bash replace_mots.sh <MESSAGE> <PREFIX_> <dictionnaire> <chemin/vers/pages/> <nom_destinataire>"
   exit 1
 fi
 
-JSON_MOTS="$1"
-PATH_PAGES="$2"
-DESTINATAIRE="$3"
-GRILLE="$4"
+MESSAGE="$1"
+PREFIX="$2"
+DICTIONNAIRE="$3"
+PATH_PAGES="$4"
+DESTINATAIRE="$5"
+JSON_MOTS="${PREFIX}_grille_mots_definitions.json"
+GRILLE="${PREFIX}_grille.svg"
+
+python3 generate_grille.py "$MESSAGE" "${PREFIX}_"
+sed -i -f motifs.sed "$GRILLE"
+
 
 [[ "$PATH_PAGES" != */ ]] && PATH_PAGES="${PATH_PAGES}/"
 
@@ -35,6 +41,10 @@ if [ ! -f "${PATH_PAGES}page4.svg" ]; then
   exit 1
 fi
 
+mkdir -p "/tmp/$DESTINATAIRE"
+
+sed "s/%NOM%/$DESTINATAIRE/" ${PATH_PAGES}page1.svg > /tmp/"$DESTINATAIRE"/page1.svg
+
 MOTS_VERTI=$(jq -r '.[] | select(.orientation=="V") | "\(.mot_id). \(.definition)"' "$JSON_MOTS" | tr "\n" '|' | sed 's/|/\\n/g')
 
 MOTS_HORIZ=$(jq -r '.[] | select(.orientation=="H") | "\(.mot_id). \(.definition)"' "$JSON_MOTS" | tr "\n" '|' | sed 's/|/\\n/g')
@@ -49,7 +59,17 @@ sed '/%GRILLE%/Q' ${PATH_PAGES}page3.svg > tmp/"$DESTINATAIRE"/page3.svg
 sed '1d' $GRILLE >> tmp/"$DESTINATAIRE"/page3.svg
 sed '1,/%GRILLE%/d' ${PATH_PAGES}page3.svg >> tmp/"$DESTINATAIRE"/page3.svg
 
+sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}page4.svg > /tmp/"$DESTINATAIRE"/page4.svg
+
+
+
 mkdir -p "./output/$DESTINATAIRE"
-inkscape -o "./output/$DESTINATAIRE"/page2.svg tmp/"$DESTINATAIRE"/page2.svg
-inkscape -o "./output/$DESTINATAIRE"/page3.svg tmp/"$DESTINATAIRE"/page3.svg
-inkscape -o "./output/$DESTINATAIRE"/page4.svg tmp/"$DESTINATAIRE"/page4.svg
+
+inkscape -o "./output/$DESTINATAIRE"/page1.pdf tmp/"$DESTINATAIRE"/page1.svg
+inkscape -o "./output/$DESTINATAIRE"/page2.pdf tmp/"$DESTINATAIRE"/page2.svg
+inkscape -o "./output/$DESTINATAIRE"/page3.pdf tmp/"$DESTINATAIRE"/page3.svg
+inkscape -o "./output/$DESTINATAIRE"/page4.pdf tmp/"$DESTINATAIRE"/page4.svg
+
+pdftk "./output/$DESTINATAIRE/page1.pdf" "./output/$DESTINATAIRE/page2.pdf" "./output/$DESTINATAIRE/page3.pdf" "./output/$DESTINATAIRE/page4.pdf" cat output "./output/$DESTINATAIRE/$DESTINATAIRE.pdf"
+
+a5toa4 --booklet "./output/$DESTINATAIRE/$DESTINATAIRE.pdf"

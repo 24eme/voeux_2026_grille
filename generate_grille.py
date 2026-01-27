@@ -347,7 +347,7 @@ class MotCroise:
                 .cellmot6 {{ fill: #B10DC9 }}
                 .color0 {{ fill: #ef3439 }}
                 .color1 {{ fill: #f57719 }}
-                .color2 {{ fill: #f7d927 }}
+                .color2 {{ fill: #f6f62a }}
                 .color3 {{ fill: #39963a }}
                 .color4 {{ fill: #f3616a }}
                 .color5 {{ fill: #337195 }}
