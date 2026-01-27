@@ -8,6 +8,7 @@ On obtient PREFIX_grille.svg la grille avec les inserts extra (logos / photo) et
 ### Impression au format booklet
 
 Paquets requis : [a5toa4](https://packages.debian.org/bullseye/texlive-extra-utils) et [pdftk](https://packages.debian.org/bullseye/pdftk)
+Potentiellement, l'erreur `I can't find the format file ``pdflatex.fmt'!` apparait et il faut ajouter des paquets latex supplémentaires
 
 Concatener les 4 pages dans un seul fichier via pdftk :
 
