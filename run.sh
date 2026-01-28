@@ -1,5 +1,5 @@
 if ! test "$1"; then
-	echo bash $0 url_pad_export_txt | bash
+	echo bash $0 url_pad_export_txt | bash
 	exit 1
 fi
 
