@@ -7,7 +7,7 @@ fi
 
 MESSAGE="$1"
 DESTINATAIRE="$2"
-OUTPUT_SUBDIR=$(echo $3 | sed 's/output\///')
+OUTPUT_SUBDIR=$(echo $3 | sed 's/output\///' | sed "s/'//g")
 PATH_PAGES="$4"
 DICTIONNAIRE="$5"
 
