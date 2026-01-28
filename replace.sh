@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! test "$ARGC" -eq 5 ]; then
+if ! test "$5"; then
   echo "Usage: bash replace.sh <MESSAGE> <nom_destinataire> <output_subdir> <chemin/vers/pages/> <chemin/vers/dictionnaire>"
   exit 1
 fi
@@ -9,7 +9,9 @@ MESSAGE="$1"
 DESTINATAIRE="$2"
 OUTPUT_SUBDIR=$(echo $3 | sed 's/output\///')
 PATH_PAGES="$4"
-DICTIONNAIRE="5"
+DICTIONNAIRE="$5"
+
+PREFIX=$OUTPUT_SUBDIR
 
 JSON_MOTS="${PREFIX}_grille_mots_definitions.json"
 GRILLE="${PREFIX}_grille.svg"
