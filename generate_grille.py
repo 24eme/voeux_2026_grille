@@ -354,7 +354,7 @@ class MotCroise:
                 .color6 {{ fill: #4bafe1 }}
                 .normal {{ fill: white; }}
                 text.secret {{ fill: white }}
-                .number {{ font-family: Arial; font-size: 12px; fill: #666; }}
+                .number {{ font-family: Arial; font-size: 15px; fill: #000; }}
                 .title {{ font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: middle; }}
             </style>
             <defs>
@@ -444,6 +444,8 @@ class MotCroiseGenerator:
     def setMessage(self, msg):
         self.message = msg
         for (mot,definition,score_impact) in self.mots:
+            if mot in self.message.split( ):
+                continue
             for lettre in self.message:
                 if lettre in mot:
                     self.mots_message.append(mot)
