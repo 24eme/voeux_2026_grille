@@ -65,19 +65,19 @@ sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}/page4.svg > tmp/"$OUTPUT_SUBDIR"/p
 
 
 if ! test -f tmp/"$OUTPUT_SUBDIR"/page1.svg; then
-	echo ERROR: tmp page1 missinig;
+	echo ERROR: tmp page1 missing;
 	exit 6;
 fi
 if ! test -f tmp/"$OUTPUT_SUBDIR"/page2.svg; then
-        echo ERROR: tmp page2 missinig;
+        echo ERROR: tmp page2 missing;
         exit 7;
 fi
 if ! test -f tmp/"$OUTPUT_SUBDIR"/page3.svg; then
-        echo ERROR: tmp page3 missinig;
+        echo ERROR: tmp page3 missing;
         exit 8;
 fi
 if ! test -f tmp/"$OUTPUT_SUBDIR"/page4.svg; then
-        echo ERROR: tmp page4 missinig;
+        echo ERROR: tmp page4 missing;
         exit 9;
 fi
 
