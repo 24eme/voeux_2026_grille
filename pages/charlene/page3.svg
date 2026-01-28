@@ -28,14 +28,14 @@
    inkscape:deskcolor="#d1d1d1"
    inkscape:document-units="mm"
    inkscape:zoom="0.68420998"
-   inkscape:cx="375.61569"
+   inkscape:cx="376.34645"
    inkscape:cy="349.30797"
    inkscape:window-width="1728"
    inkscape:window-height="1011"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
-   inkscape:current-layer="layer1" /><defs
+   inkscape:current-layer="g1" /><defs
    id="defs1"><filter
      inkscape:label="Point Engraving"
      style="color-interpolation-filters:sRGB"
@@ -824,10 +824,10 @@
      xml:space="preserve"
      id="text2"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.7953px;font-family:P052;-inkscape-font-specification:'P052, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:1.21464"
-     x="47.681229"
-     y="49.889782"><tspan
-       x="15.611895"
-       y="49.889782"
+     x="49.681229"
+     y="45.889782"><tspan
+       x="17.611895"
+       y="45.889782"
        id="tspan3"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.7953px;font-family:Serif;-inkscape-font-specification:'Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:1.21464">de l'année 2026</tspan></text></g></g>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.3333px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:1.21464">de l'année 2026</tspan></text></g></g>
 </svg>

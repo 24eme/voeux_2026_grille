@@ -27,14 +27,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.71271873"
-     inkscape:cx="470.03114"
-     inkscape:cy="284.82484"
-     inkscape:window-width="1088"
-     inkscape:window-height="991"
-     inkscape:window-x="26"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0"
+     inkscape:zoom="1.4254375"
+     inkscape:cx="517.38503"
+     inkscape:cy="213.26786"
+     inkscape:window-width="1728"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
@@ -577,7 +577,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.3;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect293);display:inline;opacity:0.2;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.377953;stroke-opacity:1"><tspan
          x="-90.414062"
          y="-394.71139"
-         id="tspan1">24EME</tspan></text>
+         id="tspan10">24EME</tspan></text>
     <g
        id="g22"
        transform="matrix(3.7795276,0,0,3.7795276,-572.39788,9.083414)"
@@ -590,9 +590,9 @@
          inkscape:label="text_horiz"><tspan
            x="605.52734"
            y="69.163"
-           id="tspan3"><tspan
+           id="tspan13"><tspan
              style="font-weight:bold;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Bold';fill:#000000"
-             id="tspan2">Horizontalement</tspan></tspan></text>
+             id="tspan12">Horizontalement</tspan></tspan></text>
     </g>
     <g
        id="g21"
@@ -605,9 +605,9 @@
          inkscape:label="text_verti"><tspan
            x="605.52734"
            y="68.386891"
-           id="tspan5"><tspan
+           id="tspan15"><tspan
              style="font-weight:bold;font-family:Serif;-inkscape-font-specification:'Serif, Bold';fill:#000000"
-             id="tspan4">Verticalement</tspan></tspan></text>
+             id="tspan14">Verticalement</tspan></tspan></text>
     </g>
     <g
        id="g35"
@@ -629,9 +629,9 @@
          id="text34"><tspan
            x="159.18164"
            y="38.658812"
-           id="tspan7"><tspan
+           id="tspan17"><tspan
              style="fill:#000000"
-             id="tspan6">%MOTS_HORIZ%</tspan></tspan></text>
+             id="tspan16">%MOTS_HORIZ%</tspan></tspan></text>
     </g>
     <g
        id="g34"
@@ -653,9 +653,9 @@
          id="text4"><tspan
            x="159.18164"
            y="38.658812"
-           id="tspan9"><tspan
+           id="tspan19"><tspan
              style="fill:#000000"
-             id="tspan8">%MOTS_VERTI%</tspan></tspan></text>
+             id="tspan18">%MOTS_VERTI%</tspan></tspan></text>
     </g>
     <g
        id="g1"
@@ -671,15 +671,15 @@
            xml:space="preserve"
            id="text2"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.1164px;font-family:P052;-inkscape-font-specification:'P052, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#ffffff;stroke:url(#pattern228);stroke-width:0;stroke-dasharray:none"
-           transform="matrix(1.2146433,0,0,1.2146433,-497.23489,-6.2785357)"
+           transform="matrix(1.2146433,0,0,1.2146433,-511.23489,-6.2785357)"
            x="236.02177"
            y="0"
            inkscape:label="text2"><tspan
-             x="693.57796"
+             x="704.72675"
              y="45.80703"
-             id="tspan11"><tspan
-               style="font-family:Serif;-inkscape-font-specification:'Serif, Bold'"
-               id="tspan10">Mots croisés </tspan></tspan></text>
+             id="tspan21"><tspan
+               style="font-weight:normal;font-size:27.4429px;font-family:Sans;-inkscape-font-specification:'Sans, Normal'"
+               id="tspan20">Mots croisés </tspan></tspan></text>
       </g>
     </g>
   </g>
