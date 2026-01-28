@@ -68,10 +68,10 @@ sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}/page4.svg > tmp/"$OUTPUT_SUBDIR"/p
 
 mkdir -p "./output/$OUTPUT_SUBDIR"
 
-inkscape -o "./output/$OUTPUT_SUBDIR"/page1.pdf tmp/"$OUTPUT_SUBDIR"/page1.svg
-inkscape -o "./output/$OUTPUT_SUBDIR"/page2.pdf tmp/"$OUTPUT_SUBDIR"/page2.svg
-inkscape -o "./output/$OUTPUT_SUBDIR"/page3.pdf tmp/"$OUTPUT_SUBDIR"/page3.svg
-inkscape -o "./output/$OUTPUT_SUBDIR"/page4.pdf tmp/"$OUTPUT_SUBDIR"/page4.svg
+inkscape -o "./output/$OUTPUT_SUBDIR"/page1.pdf tmp/"$OUTPUT_SUBDIR"/page1.svg > /dev/null 2>&1
+inkscape -o "./output/$OUTPUT_SUBDIR"/page2.pdf tmp/"$OUTPUT_SUBDIR"/page2.svg > /dev/null 2>&1
+inkscape -o "./output/$OUTPUT_SUBDIR"/page3.pdf tmp/"$OUTPUT_SUBDIR"/page3.svg > /dev/null 2>&1
+inkscape -o "./output/$OUTPUT_SUBDIR"/page4.pdf tmp/"$OUTPUT_SUBDIR"/page4.svg > /dev/null 2>&1
 
 pdftk "./output/$OUTPUT_SUBDIR/page1.pdf" "./output/$OUTPUT_SUBDIR/page2.pdf" "./output/$OUTPUT_SUBDIR/page3.pdf" "./output/$OUTPUT_SUBDIR/page4.pdf" cat output "./output/$OUTPUT_SUBDIR/carte_finale.pdf"
 
