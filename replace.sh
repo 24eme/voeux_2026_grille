@@ -64,6 +64,23 @@ sed '1,/%GRILLE%/d' ${PATH_PAGES}/page3.svg >> tmp/"$OUTPUT_SUBDIR"/page3.svg
 sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}/page4.svg > tmp/"$OUTPUT_SUBDIR"/page4.svg
 
 
+if ! test -f tmp/"$OUTPUT_SUBDIR"/page1.svg; then
+	echo ERROR: tmp page1 missinig;
+	exit 6;
+fi
+if ! test -f tmp/"$OUTPUT_SUBDIR"/page2.svg; then
+        echo ERROR: tmp page2 missinig;
+        exit 7;
+fi
+if ! test -f tmp/"$OUTPUT_SUBDIR"/page3.svg; then
+        echo ERROR: tmp page3 missinig;
+        exit 8;
+fi
+if ! test -f tmp/"$OUTPUT_SUBDIR"/page4.svg; then
+        echo ERROR: tmp page4 missinig;
+        exit 9;
+fi
+
 
 mkdir -p "./output/$OUTPUT_SUBDIR"
 
@@ -75,3 +92,10 @@ inkscape -o "./output/$OUTPUT_SUBDIR"/page4.pdf tmp/"$OUTPUT_SUBDIR"/page4.svg >
 pdftk "./output/$OUTPUT_SUBDIR/page1.pdf" "./output/$OUTPUT_SUBDIR/page2.pdf" "./output/$OUTPUT_SUBDIR/page3.pdf" "./output/$OUTPUT_SUBDIR/page4.pdf" cat output "./output/$OUTPUT_SUBDIR/carte_finale.pdf"
 
 a5toa4 --booklet "./output/$OUTPUT_SUBDIR/carte_finale.pdf"
+
+if test -f "./output/$OUTPUT_SUBDIR/carte_finale.pdf" && test -f "./output/$OUTPUT_SUBDIR/carte_finale-booklet.pdf"; then
+	echo "./output/$OUTPUT_SUBDIR/carte_finale-booklet.pdf généré";
+else
+	echo "ERROR dans la génération : pas de ./output/$OUTPUT_SUBDIR/carte_finale-booklet.pdf"
+	exit 10;
+fi
