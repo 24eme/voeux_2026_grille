@@ -541,7 +541,7 @@ if __name__ == "__main__":
 
     gene = MotCroiseGenerator()
     gene.loadJson(file_dictionnaire, 1.1)
-    gene.loadJson("mots_complementaires.json")
+    gene.loadJson("dictionnaires/mots_complementaires.json")
     gene.setMessage(mot_secret)
 
     mc = None
