@@ -214,7 +214,7 @@
 "TACTILE": "Qui se perçoit par le toucher",
 "TAENIA": "Ver parasite",
 "TAFFER": "Travailler (argot)",
-"TANGERINE": "Hybride de mandarine et d'orange amère.",
+"TANGERINE": "Hybride de mandarine et d'orange amère",
 "TAHITIEN": "Originaire de Tahiti",
 "TAILLANDIER": "Forgeron d'outils",
 
@@ -336,5 +336,17 @@
 "BUZZ": "Bourdonnement, rumeur",
 "EFFERVESCENT": "Pétillant",
 "JAZZ": "Genre musical afro-américain",
-"QUIZ": "Questionnaire, test de connaissances"
+"QUIZ": "Questionnaire, test de connaissances",
+ "KERMESSE": "Fête populaire, souvent organisée par une école",
+ "KINESITHERAPIE": "Méthode thérapeutique utilisant le mouvement pour soigner ou rééduquer",
+ "JAPONAIS": "Langue parlée au Japon ou habitant de ce pays asiatique",
+ "JUMELAGE": "Association de deux villes, généralement de pays différents",
+ "HUMANITAIRE": "Qui vise au bien-être de l'humanité, en particulier",
+ "KAMIKAZE": "Pilote japonais effectuant une mission suicide durant la guerre",
+ "JAPPEMENT": "Aboiement aigu et bref, caractéristique du renard ou du petit chien",
+ "JUNGLE": "Forêt dense et humide des régions tropicales, à la végétation exubérante",
+ "PHARMACIE": "Établissement où l'on prépare et délivre les médicaments sur ordonnance",
+ "HYPOTHERMIE": "Baisse dangereuse de la température du corps en dessous de la normale",
+ "JONGLAGE": "Art de lancer, de recevoir et de manipuler plusieurs objets avec adresse",
+ "JOCONDE": "Tableau de Léonard de Vinci portrait célèbre d'une femme"
 }
