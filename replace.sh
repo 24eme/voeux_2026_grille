@@ -1,22 +1,17 @@
 #!/bin/bash
-ARGC=$#
-MIN_ARGS=4
-MAX_ARGS=5
 
-if [ "$ARGC" -lt "$MIN_ARGS" ] || [ "$ARGC" -gt "$MAX_ARGS" ]; then
-  echo "Usage: bash replace_mots.sh <MESSAGE> <PREFIX_> <chemin/vers/pages/> <nom_destinataire> [dictionnaire]"
+if ! test "$5"; then
+  echo "Usage: bash replace.sh <MESSAGE> <nom_destinataire> <output_subdir> <chemin/vers/pages/> <chemin/vers/dictionnaire>"
   exit 1
 fi
 
 MESSAGE="$1"
-PREFIX="$2"
-PATH_PAGES="$3"
-DESTINATAIRE="$4"
+DESTINATAIRE="$2"
+OUTPUT_SUBDIR=$(echo $3 | sed 's/output\///')
+PATH_PAGES="$4"
+DICTIONNAIRE="$5"
 
-DICTIONNAIRE=""
-if [ "$ARGC" -eq 5 ]; then
-  DICTIONNAIRE="$5"
-fi
+PREFIX=$OUTPUT_SUBDIR
 
 JSON_MOTS="${PREFIX}_grille_mots_definitions.json"
 GRILLE="${PREFIX}_grille.svg"
@@ -50,9 +45,9 @@ if [ ! -f "${PATH_PAGES}/page4.svg" ]; then
   exit 4
 fi
 
-mkdir -p "tmp/$DESTINATAIRE"
+mkdir -p "tmp/$OUTPUT_SUBDIR"
 
-sed "s/%NOM%/$DESTINATAIRE/" ${PATH_PAGES}/page1.svg > tmp/"$DESTINATAIRE"/page1.svg
+sed "s/%NOM%/$DESTINATAIRE/" ${PATH_PAGES}/page1.svg > tmp/"$OUTPUT_SUBDIR"/page1.svg
 
 MOTS_VERTI=$(jq -r '.[] | select(.orientation=="V") | "\(.mot_id). \(.definition)"' "$JSON_MOTS" | tr "\n" '|' | sed 's/|/\\n/g')
 
@@ -60,25 +55,24 @@ MOTS_HORIZ=$(jq -r '.[] | select(.orientation=="H") | "\(.mot_id). \(.definition
 
 SOLUTIONS=$(jq -r '.[] | "\(.mot_id). \(.mot)"' "$JSON_MOTS" | tr "\n" ' ')
 
-mkdir -p "tmp/$DESTINATAIRE"
-sed -e "s/%MOTS_VERTI%/$MOTS_VERTI/" -e "s/%MOTS_HORIZ%/$MOTS_HORIZ/" ${PATH_PAGES}/page2.svg > tmp/"$DESTINATAIRE"/page2.svg
-sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}/page4.svg > tmp/"$DESTINATAIRE"/page4.svg
+sed -e "s/%MOTS_VERTI%/$MOTS_VERTI/" -e "s/%MOTS_HORIZ%/$MOTS_HORIZ/" ${PATH_PAGES}/page2.svg > tmp/"$OUTPUT_SUBDIR"/page2.svg
+sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}/page4.svg > tmp/"$OUTPUT_SUBDIR"/page4.svg
 
-sed '/%GRILLE%/Q' ${PATH_PAGES}/page3.svg > tmp/"$DESTINATAIRE"/page3.svg
-sed '1d' $GRILLE >> tmp/"$DESTINATAIRE"/page3.svg
-sed '1,/%GRILLE%/d' ${PATH_PAGES}/page3.svg >> tmp/"$DESTINATAIRE"/page3.svg
+sed '/%GRILLE%/Q' ${PATH_PAGES}/page3.svg > tmp/"$OUTPUT_SUBDIR"/page3.svg
+sed '1d' $GRILLE >> tmp/"$OUTPUT_SUBDIR"/page3.svg
+sed '1,/%GRILLE%/d' ${PATH_PAGES}/page3.svg >> tmp/"$OUTPUT_SUBDIR"/page3.svg
 
-sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}/page4.svg > tmp/"$DESTINATAIRE"/page4.svg
-
+sed "s/%SOLUTIONS%/$SOLUTIONS/" ${PATH_PAGES}/page4.svg > tmp/"$OUTPUT_SUBDIR"/page4.svg
 
 
-mkdir -p "./output/$DESTINATAIRE"
 
-inkscape -o "./output/$DESTINATAIRE"/page1.pdf tmp/"$DESTINATAIRE"/page1.svg
-inkscape -o "./output/$DESTINATAIRE"/page2.pdf tmp/"$DESTINATAIRE"/page2.svg
-inkscape -o "./output/$DESTINATAIRE"/page3.pdf tmp/"$DESTINATAIRE"/page3.svg
-inkscape -o "./output/$DESTINATAIRE"/page4.pdf tmp/"$DESTINATAIRE"/page4.svg
+mkdir -p "./output/$OUTPUT_SUBDIR"
 
-pdftk "./output/$DESTINATAIRE/page1.pdf" "./output/$DESTINATAIRE/page2.pdf" "./output/$DESTINATAIRE/page3.pdf" "./output/$DESTINATAIRE/page4.pdf" cat output "./output/$DESTINATAIRE/$DESTINATAIRE.pdf"
+inkscape -o "./output/$OUTPUT_SUBDIR"/page1.pdf tmp/"$OUTPUT_SUBDIR"/page1.svg > /dev/null 2>&1
+inkscape -o "./output/$OUTPUT_SUBDIR"/page2.pdf tmp/"$OUTPUT_SUBDIR"/page2.svg > /dev/null 2>&1
+inkscape -o "./output/$OUTPUT_SUBDIR"/page3.pdf tmp/"$OUTPUT_SUBDIR"/page3.svg > /dev/null 2>&1
+inkscape -o "./output/$OUTPUT_SUBDIR"/page4.pdf tmp/"$OUTPUT_SUBDIR"/page4.svg > /dev/null 2>&1
 
-a5toa4 --booklet "./output/$DESTINATAIRE/$DESTINATAIRE.pdf"
+pdftk "./output/$OUTPUT_SUBDIR/page1.pdf" "./output/$OUTPUT_SUBDIR/page2.pdf" "./output/$OUTPUT_SUBDIR/page3.pdf" "./output/$OUTPUT_SUBDIR/page4.pdf" cat output "./output/$OUTPUT_SUBDIR/carte_finale.pdf"
+
+a5toa4 --booklet "./output/$OUTPUT_SUBDIR/carte_finale.pdf"
