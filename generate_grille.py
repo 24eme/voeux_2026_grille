@@ -444,6 +444,8 @@ class MotCroiseGenerator:
     def setMessage(self, msg):
         self.message = msg
         for (mot,definition,score_impact) in self.mots:
+            if mot in self.message.split( ):
+                continue
             for lettre in self.message:
                 if lettre in mot:
                     self.mots_message.append(mot)
