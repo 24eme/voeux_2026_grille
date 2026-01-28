@@ -17,8 +17,10 @@ PREFIX="tmp/$OUTPUT_SUBDIR/$OUTPUT_SUBDIR"
 JSON_MOTS="${PREFIX}_grille_mots_definitions.json"
 GRILLE="${PREFIX}_grille.svg"
 
+if ! test -f "$GRILLE"; then
 if python3 generate_grille.py "$MESSAGE" "${PREFIX}_" ${DICTIONNAIRE:+ "$DICTIONNAIRE"}; then
   sed -i -f motifs.sed "$GRILLE"
+fi
 fi
 
 if ! test -f $GRILLE ; then
