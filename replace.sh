@@ -11,7 +11,8 @@ OUTPUT_SUBDIR=$(echo $3 | sed 's/output\///')
 PATH_PAGES="$4"
 DICTIONNAIRE="$5"
 
-PREFIX=$OUTPUT_SUBDIR
+mkdir -p "tmp/$OUTPUT_SUBDIR"
+PREFIX="tmp/$OUTPUT_SUBDIR/$OUTPUT_SUBDIR"
 
 JSON_MOTS="${PREFIX}_grille_mots_definitions.json"
 GRILLE="${PREFIX}_grille.svg"
@@ -44,8 +45,6 @@ if [ ! -f "${PATH_PAGES}/page4.svg" ]; then
   echo "page4.svg not found!"
   exit 4
 fi
-
-mkdir -p "tmp/$OUTPUT_SUBDIR"
 
 sed "s/%NOM%/$DESTINATAIRE/" ${PATH_PAGES}/page1.svg > tmp/"$OUTPUT_SUBDIR"/page1.svg
 
