@@ -24,15 +24,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.3940701"
-     inkscape:cx="188.29756"
-     inkscape:cy="661.73143"
+     inkscape:zoom="1.2021543"
+     inkscape:cx="313.18774"
+     inkscape:cy="630.95061"
      inkscape:window-width="1920"
      inkscape:window-height="1051"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g8" />
+     inkscape:current-layer="g23" />
   <defs
      id="defs1">
     <pattern
@@ -347,9 +347,9 @@
          transform="translate(9.5464219,289.84388)"><tspan
            x="8.4199219"
            y="39.174"
-           id="tspan2"><tspan
+           id="tspan149"><tspan
              style="font-weight:bold;fill:#000000"
-             id="tspan1">Météo</tspan></tspan></text>
+             id="tspan148">Météo</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text273"
@@ -357,41 +357,41 @@
          transform="translate(-1.8464273,-7.1752193)"><tspan
            x="20.007812"
            y="366.46561"
-           id="tspan4"><tspan
+           id="tspan151"><tspan
    style="font-weight:bold"
-   id="tspan3">Nord</tspan>
+   id="tspan150">Nord</tspan>
 </tspan><tspan
            x="20.007812"
            y="386.56162"
-           id="tspan5">Pluie et froid.
+           id="tspan152">Pluie et froid.
 </tspan><tspan
            x="20.007812"
            y="406.56162"
-           id="tspan6">Moral en baisse, pull </tspan><tspan
+           id="tspan153">Moral en baisse, pull </tspan><tspan
            x="20.007812"
            y="426.56162"
-           id="tspan7">obligatoire.
+           id="tspan154">obligatoire.
 </tspan><tspan
            x="20.007812"
            y="446.56162"
-           id="tspan8">
+           id="tspan155">
 </tspan><tspan
            x="20.007812"
            y="466.56162"
-           id="tspan10"><tspan
+           id="tspan157"><tspan
    style="font-weight:bold"
-   id="tspan9">Sud</tspan>
+   id="tspan156">Sud</tspan>
 </tspan><tspan
            x="20.007812"
            y="486.65763"
-           id="tspan11">Soleil et douceur.
+           id="tspan158">Soleil et douceur.
 </tspan><tspan
            x="20.007812"
            y="506.65763"
-           id="tspan12">Les réunions se tiennent en </tspan><tspan
+           id="tspan159">Les réunions se tiennent en </tspan><tspan
            x="20.007812"
            y="526.65763"
-           id="tspan13">terrasse.</tspan></text>
+           id="tspan160">terrasse.</tspan></text>
       <text
          xml:space="preserve"
          id="text266-1-6"
@@ -399,9 +399,9 @@
          transform="translate(9.5464219,544.26579)"><tspan
            x="8.4199219"
            y="39.174"
-           id="tspan15"><tspan
+           id="tspan162"><tspan
              style="font-weight:bold;fill:#000000"
-             id="tspan14">Citation</tspan></tspan></text>
+             id="tspan161">Citation</tspan></tspan></text>
     </g>
     <g
        id="g280"
@@ -417,14 +417,14 @@
          transform="translate(-18.290931,33.119169)"><tspan
            x="36.403442"
            y="583.55811"
-           id="tspan17"><tspan
+           id="tspan164"><tspan
              style="fill-opacity:1"
-             id="tspan16">Une personne azerty en vaut </tspan></tspan><tspan
+             id="tspan163">Une personne azerty en vaut </tspan></tspan><tspan
            x="36.403442"
            y="603.55808"
-           id="tspan19"><tspan
+           id="tspan166"><tspan
              style="fill-opacity:1"
-             id="tspan18">deux.
+             id="tspan165">deux.
 </tspan></tspan></text>
       <text
          xml:space="preserve"
@@ -433,7 +433,7 @@
          transform="translate(15.175819,-6.0296802)"><tspan
            x="60.806641"
            y="676.13944"
-           id="tspan20"> — Christian Clavier
+           id="tspan167"> — Christian Clavier
 </tspan></text>
       <g
          style="fill:#000000;fill-opacity:0.154976"
@@ -637,10 +637,10 @@
            inkscape:label="cancer"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan21">Allez plutot lire votre </tspan><tspan
+             id="tspan168">Allez plutot lire votre </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan22">horoscope chinois.</tspan></text>
+             id="tspan169">horoscope chinois.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-3"
@@ -649,13 +649,13 @@
            inkscape:label="verseau"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan23">Croyez tout ce que vous </tspan><tspan
+             id="tspan170">Croyez tout ce que vous </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan24">lisez, surtout si c'est sur </tspan><tspan
+             id="tspan171">lisez, surtout si c'est sur </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan25">internet.</tspan></text>
+             id="tspan172">internet.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-3-1"
@@ -664,7 +664,7 @@
            inkscape:label="gemeau"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan26">L'avenir ne fait pas le moine.</tspan></text>
+             id="tspan173">L'avenir ne fait pas le moine.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-3-0"
@@ -673,7 +673,7 @@
            inkscape:label="poisson"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan27">La fortune est aveugle.</tspan></text>
+             id="tspan174">La fortune est aveugle.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-3-3"
@@ -682,10 +682,10 @@
            inkscape:label="balance"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan28">Si ça marche, touche y </tspan><tspan
+             id="tspan175">Si ça marche, touche y </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan29">surtout pas.</tspan></text>
+             id="tspan176">surtout pas.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-4"
@@ -694,13 +694,13 @@
            inkscape:label="capricorne"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan30">Un collegue de bureau sera </tspan><tspan
+             id="tspan177">Un collegue de bureau sera </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan31">au bon endroit au bon </tspan><tspan
+             id="tspan178">au bon endroit au bon </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan32">moment, et vous aussi.</tspan></text>
+             id="tspan179">moment, et vous aussi.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-2"
@@ -709,13 +709,13 @@
            inkscape:label="scorpion"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan33">Les files d'attentes ne </tspan><tspan
+             id="tspan180">Les files d'attentes ne </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan34">seront qu'épreuves pour </tspan><tspan
+             id="tspan181">seront qu'épreuves pour </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan35">votre patience.</tspan></text>
+             id="tspan182">votre patience.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-1"
@@ -724,19 +724,19 @@
            inkscape:label="lion"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan36">Surtout ne jouez pas les </tspan><tspan
+             id="tspan183">Surtout ne jouez pas les </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan37">numéros 1 1 2 3 5 8 13 et </tspan><tspan
+             id="tspan184">numéros 1 1 2 3 5 8 13 et </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan38">21, ils pourraient vous </tspan><tspan
+             id="tspan185">21, ils pourraient vous </tspan><tspan
              x="313.2168"
              y="1058.2059"
-             id="tspan39">porter malheur, ou est-ce le </tspan><tspan
+             id="tspan186">porter malheur, ou est-ce le </tspan><tspan
              x="313.2168"
              y="1074.8725"
-             id="tspan40">contraire ?</tspan></text>
+             id="tspan187">contraire ?</tspan></text>
         <text
            xml:space="preserve"
            id="text248-0"
@@ -745,10 +745,10 @@
            inkscape:label="sagittaire"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan41">L'amour appartient à </tspan><tspan
+             id="tspan188">L'amour appartient à </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan42">ceux qui se levent tôt.</tspan></text>
+             id="tspan189">ceux qui se levent tôt.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-8"
@@ -757,10 +757,10 @@
            inkscape:label="vierge"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan43">Vos clés sont dans la salle </tspan><tspan
+             id="tspan190">Vos clés sont dans la salle </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan44">de bain.</tspan></text>
+             id="tspan191">de bain.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-5"
@@ -769,16 +769,16 @@
            inkscape:label="taureau"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan45">Depuis demain matin, le </tspan><tspan
+             id="tspan192">Depuis demain matin, le </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan46">Soleil n'est plus en Taureau, </tspan><tspan
+             id="tspan193">Soleil n'est plus en Taureau, </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan47">donc le prix du gaz va </tspan><tspan
+             id="tspan194">donc le prix du gaz va </tspan><tspan
              x="313.2168"
              y="1058.2059"
-             id="tspan48">encore monter.</tspan></text>
+             id="tspan195">encore monter.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-24"
@@ -787,13 +787,13 @@
            inkscape:label="belier"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan49">Des portes s'ouvrent à vous, </tspan><tspan
+             id="tspan196">Des portes s'ouvrent à vous, </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan50">n'oubliez pas de les refermer </tspan><tspan
+             id="tspan197">n'oubliez pas de les refermer </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan51">derrière vous.</tspan></text>
+             id="tspan198">derrière vous.</tspan></text>
       </g>
       <text
          xml:space="preserve"
@@ -803,9 +803,9 @@
          inkscape:label="titre"><tspan
            x="32.708984"
            y="919.52845"
-           id="tspan53"><tspan
+           id="tspan200"><tspan
              style="font-weight:bold"
-             id="tspan52">Horoscope</tspan></tspan></text>
+             id="tspan199">Horoscope</tspan></tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -815,36 +815,36 @@
        inkscape:label="oressources"><tspan
          x="264.45703"
          y="39.03"
-         id="tspan55"><tspan
+         id="tspan202"><tspan
            style="font-weight:bold;font-size:24px"
-           id="tspan54">Bonne nouvelle pour les </tspan></tspan><tspan
+           id="tspan201">Bonne nouvelle pour les </tspan></tspan><tspan
          x="264.45703"
          y="69.03"
-         id="tspan57"><tspan
+         id="tspan204"><tspan
    style="font-weight:bold;font-size:24px"
-   id="tspan56">recycleries !</tspan>
+   id="tspan203">recycleries !</tspan>
 </tspan><tspan
          x="264.45703"
          y="92.366"
-         id="tspan61"><tspan
+         id="tspan208"><tspan
            style="font-size:13.3333px"
-           id="tspan58">Le 24ème ressuscite le projet libre </tspan><tspan
+           id="tspan205">Le 24ème ressuscite le projet libre </tspan><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan59">ORessource</tspan><tspan
+           id="tspan206">ORessource</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan60"> en </tspan></tspan><tspan
+           id="tspan207"> en </tspan></tspan><tspan
          x="264.45703"
          y="112.366"
-         id="tspan63"><tspan
+         id="tspan210"><tspan
            style="font-size:13.3333px"
-           id="tspan62">proposant une plateforme d'hébergement à la </tspan></tspan><tspan
+           id="tspan209">proposant une plateforme d'hébergement à la </tspan></tspan><tspan
          x="264.45703"
          y="132.366"
-         id="tspan66"><tspan
+         id="tspan213"><tspan
            style="font-size:13.3333px"
-           id="tspan64">demande, d'instance du logiciel : </tspan><tspan
+           id="tspan211">demande, d'instance du logiciel : </tspan><tspan
            style="font-size:13.3333px;fill:#00838f"
-           id="tspan65">oressource.org</tspan></tspan></text>
+           id="tspan212">oressource.org</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text286"
@@ -853,60 +853,60 @@
        inkscape:label="sysnove"><tspan
          x="424.74609"
          y="39.03"
-         id="tspan68"><tspan
+         id="tspan215"><tspan
            style="font-weight:bold;font-size:24px"
-           id="tspan67">Piraterie
+           id="tspan214">Piraterie
 </tspan></tspan><tspan
          x="424.74609"
          y="62.366"
-         id="tspan70"><tspan
+         id="tspan217"><tspan
            style="font-size:13.3333px"
-           id="tspan69">Les bots IA </tspan></tspan><tspan
+           id="tspan216">Les bots IA </tspan></tspan><tspan
          x="424.74609"
          y="82.366"
-         id="tspan72"><tspan
+         id="tspan219"><tspan
            style="font-size:13.3333px"
-           id="tspan71">parcourent le web </tspan></tspan><tspan
+           id="tspan218">parcourent le web </tspan></tspan><tspan
          x="424.74609"
          y="102.366"
-         id="tspan74"><tspan
+         id="tspan221"><tspan
            style="font-size:13.3333px"
-           id="tspan73">mondial et mènent la </tspan></tspan><tspan
+           id="tspan220">mondial et mènent la </tspan></tspan><tspan
          x="424.74609"
          y="122.366"
-         id="tspan76"><tspan
+         id="tspan223"><tspan
            style="font-size:13.3333px"
-           id="tspan75">vie dure à nos </tspan></tspan><tspan
+           id="tspan222">vie dure à nos </tspan></tspan><tspan
          x="424.74609"
          y="142.366"
-         id="tspan78"><tspan
+         id="tspan225"><tspan
            style="font-size:13.3333px"
-           id="tspan77">serveurs.
+           id="tspan224">serveurs.
 </tspan></tspan><tspan
          x="424.74609"
          y="162.366"
-         id="tspan80"><tspan
+         id="tspan227"><tspan
            style="font-size:13.3333px"
-           id="tspan79">Heureusement notre </tspan></tspan><tspan
+           id="tspan226">Heureusement notre </tspan></tspan><tspan
          x="424.74609"
          y="182.366"
-         id="tspan82"><tspan
+         id="tspan229"><tspan
            style="font-size:13.3333px"
-           id="tspan81">prestataire en </tspan></tspan><tspan
+           id="tspan228">prestataire en </tspan></tspan><tspan
          x="424.74609"
          y="202.366"
-         id="tspan86"><tspan
+         id="tspan233"><tspan
            style="font-size:13.3333px"
-           id="tspan83">infogérance </tspan><tspan
+           id="tspan230">infogérance </tspan><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan84">Sysnove</tspan><tspan
+           id="tspan231">Sysnove</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan85"> </tspan></tspan><tspan
+           id="tspan232"> </tspan></tspan><tspan
          x="424.74609"
          y="222.366"
-         id="tspan88"><tspan
+         id="tspan235"><tspan
            style="font-size:13.3333px"
-           id="tspan87">veille au grain.</tspan></tspan></text>
+           id="tspan234">veille au grain.</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text295"
@@ -915,45 +915,45 @@
        inkscape:label="aurouze"><tspan
          x="251.23242"
          y="571.05734"
-         id="tspan90"><tspan
+         id="tspan237"><tspan
    style="font-weight:bold;font-size:24px"
-   id="tspan89">Rats, l'offensive parisienne</tspan>
+   id="tspan236">Rats, l'offensive parisienne</tspan>
 </tspan><tspan
          x="251.23242"
          y="594.39334"
-         id="tspan94"><tspan
+         id="tspan241"><tspan
            style="font-size:13.3333px"
-           id="tspan91">Face à l'invasion, la célèbre </tspan><tspan
+           id="tspan238">Face à l'invasion, la célèbre </tspan><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan92">Maison Aurouze</tspan><tspan
+           id="tspan239">Maison Aurouze</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan93">, </tspan></tspan><tspan
+           id="tspan240">, </tspan></tspan><tspan
          x="251.23242"
          y="614.39334"
-         id="tspan96"><tspan
+         id="tspan243"><tspan
            style="font-size:13.3333px"
-           id="tspan95">expérimente actuellement sa nouvelle arme contre </tspan></tspan><tspan
+           id="tspan242">expérimente actuellement sa nouvelle arme contre </tspan></tspan><tspan
          x="251.23242"
          y="634.39334"
-         id="tspan100"><tspan
+         id="tspan247"><tspan
            style="font-size:13.3333px"
-           id="tspan97">ses nuisibles. Il s'agit d'un </tspan><tspan
+           id="tspan244">ses nuisibles. Il s'agit d'un </tspan><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan98">robot chat</tspan><tspan
+           id="tspan245">robot chat</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan99"> piloté par </tspan></tspan><tspan
+           id="tspan246"> piloté par </tspan></tspan><tspan
          x="251.23242"
          y="654.39334"
-         id="tspan103"><tspan
+         id="tspan250"><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan101">intelligence artificielle</tspan><tspan
+           id="tspan248">intelligence artificielle</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan102"> capable de chasser des </tspan></tspan><tspan
+           id="tspan249"> capable de chasser des </tspan></tspan><tspan
          x="251.23242"
          y="674.39334"
-         id="tspan105"><tspan
+         id="tspan252"><tspan
            style="font-size:13.3333px"
-           id="tspan104">milliers de surmulots par jour.</tspan></tspan></text>
+           id="tspan251">milliers de surmulots par jour.</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text300"
@@ -962,56 +962,56 @@
        inkscape:label="signature"><tspan
          x="260.56641"
          y="679.78195"
-         id="tspan107"><tspan
+         id="tspan254"><tspan
            style="font-weight:bold;font-size:24px"
-           id="tspan106">SignaturePDF </tspan></tspan><tspan
+           id="tspan253">SignaturePDF </tspan></tspan><tspan
          x="260.56641"
          y="709.78195"
-         id="tspan109"><tspan
+         id="tspan256"><tspan
            style="font-weight:bold;font-size:24px"
-           id="tspan108">en pleine </tspan></tspan><tspan
+           id="tspan255">en pleine </tspan></tspan><tspan
          x="260.56641"
          y="739.78195"
-         id="tspan111"><tspan
+         id="tspan258"><tspan
    style="font-weight:bold;font-size:24px"
-   id="tspan110">forme</tspan>
+   id="tspan257">forme</tspan>
 </tspan><tspan
          x="260.56641"
          y="763.11795"
-         id="tspan113"><tspan
+         id="tspan260"><tspan
            style="font-size:13.3333px"
-           id="tspan112">Grâce aux subventions </tspan></tspan><tspan
+           id="tspan259">Grâce aux subventions </tspan></tspan><tspan
          x="260.56641"
          y="783.11795"
-         id="tspan117"><tspan
+         id="tspan264"><tspan
            style="font-size:13.3333px"
-           id="tspan114">accordées par </tspan><tspan
+           id="tspan261">accordées par </tspan><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan115">NLNet</tspan><tspan
+           id="tspan262">NLNet</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan116">, le </tspan></tspan><tspan
+           id="tspan263">, le </tspan></tspan><tspan
          x="260.56641"
          y="803.11795"
-         id="tspan119"><tspan
+         id="tspan266"><tspan
            style="font-size:13.3333px"
-           id="tspan118">logiciel libre de </tspan></tspan><tspan
+           id="tspan265">logiciel libre de </tspan></tspan><tspan
          x="260.56641"
          y="823.11795"
-         id="tspan121"><tspan
+         id="tspan268"><tspan
            style="font-size:13.3333px"
-           id="tspan120">manipulation de PDF </tspan></tspan><tspan
+           id="tspan267">manipulation de PDF </tspan></tspan><tspan
          x="260.56641"
          y="843.11795"
-         id="tspan124"><tspan
+         id="tspan271"><tspan
            style="font-size:13.3333px;fill:#00838f"
-           id="tspan122">pdf.24eme.fr</tspan><tspan
+           id="tspan269">pdf.24eme.fr</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan123"> se dote de </tspan></tspan><tspan
+           id="tspan270"> se dote de </tspan></tspan><tspan
          x="260.56641"
          y="863.11795"
-         id="tspan126"><tspan
+         id="tspan273"><tspan
            style="font-size:13.3333px"
-           id="tspan125">nouvelles fonctionnalités </tspan></tspan></text>
+           id="tspan272">nouvelles fonctionnalités </tspan></tspan></text>
     <rect
        style="display:inline;fill:#cccccc;stroke:#000000;stroke-width:0.236748;stroke-dasharray:none;stroke-opacity:1"
        id="rect319"
@@ -1034,56 +1034,56 @@
        transform="translate(11.412001,146.48975)"><tspan
          x="54.574219"
          y="-131.87091"
-         id="tspan127">Suite à une excellente </tspan><tspan
+         id="tspan274">Suite à une excellente </tspan><tspan
          x="54.574219"
          y="-127.46118"
-         id="tspan128">récolte, les célèbres </tspan><tspan
+         id="tspan275">récolte, les célèbres </tspan><tspan
          x="54.574219"
          y="-123.05145"
-         id="tspan130">logiciels <tspan
+         id="tspan277">logiciels <tspan
    style="font-weight:bold"
-   id="tspan129">Giilda</tspan> et </tspan><tspan
+   id="tspan276">Giilda</tspan> et </tspan><tspan
          x="54.574219"
          y="-118.62056"
-         id="tspan132"><tspan
+         id="tspan279"><tspan
    style="font-weight:bold"
-   id="tspan131">OpenOdg</tspan> risquent de </tspan><tspan
+   id="tspan278">OpenOdg</tspan> risquent de </tspan><tspan
          x="54.574219"
          y="-114.18966"
-         id="tspan133">tourner à plein régime.
+         id="tspan280">tourner à plein régime.
 </tspan><tspan
          x="54.574219"
          y="-109.77993"
-         id="tspan134">Les équipes sont sur le </tspan><tspan
+         id="tspan281">Les équipes sont sur le </tspan><tspan
          x="54.574219"
          y="-105.3702"
-         id="tspan135">pont pour faciliter les </tspan><tspan
+         id="tspan282">pont pour faciliter les </tspan><tspan
          x="54.574219"
          y="-100.96048"
-         id="tspan136">revendications, </tspan><tspan
+         id="tspan283">revendications, </tspan><tspan
          x="94.560547"
          y="-131.95684"
-         id="tspan137">parcellaire, drm, </tspan><tspan
+         id="tspan284">parcellaire, drm, </tspan><tspan
          x="94.560547"
          y="-127.54711"
-         id="tspan138">contrats de vente...
+         id="tspan285">contrats de vente...
 </tspan><tspan
          x="94.560547"
          y="-123.13739"
-         id="tspan139">Vignerons, pensez au </tspan><tspan
+         id="tspan286">Vignerons, pensez au </tspan><tspan
          x="94.560547"
          y="-118.70649"
-         id="tspan141"><tspan
+         id="tspan288"><tspan
    style="font-weight:bold"
-   id="tspan140">QrCode</tspan> nutritionnelle </tspan><tspan
+   id="tspan287">QrCode</tspan> nutritionnelle </tspan><tspan
          x="94.560547"
          y="-114.2756"
-         id="tspan142">sur vos étiquettes : </tspan><tspan
+         id="tspan289">sur vos étiquettes : </tspan><tspan
          x="94.560547"
          y="-109.86587"
-         id="tspan144"><tspan
+         id="tspan291"><tspan
            style="fill:#00838f"
-           id="tspan143">nutri.vin</tspan></tspan></text>
+           id="tspan290">nutri.vin</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text320"
@@ -1091,9 +1091,9 @@
        transform="matrix(0.26458333,0,0,0.26458333,-4.0619076,0.83076008)"><tspan
          x="264.56641"
          y="30.379078"
-         id="tspan146"><tspan
+         id="tspan293"><tspan
            style="font-weight:bold"
-           id="tspan145">Viticulture</tspan></tspan></text>
+           id="tspan292">Viticulture</tspan></tspan></text>
     <rect
        style="display:inline;fill:url(#pattern340);stroke:none;stroke-width:0.0655251;stroke-dasharray:none"
        id="rect321"
@@ -1147,7 +1147,7 @@
       <path
          id="rect23"
          style="fill:none;stroke:none;stroke-width:0.264999"
-         d="M 555.82262 209.25245 L 555.82262 207.44894 L 591.20444 207.44894 L 591.20444 194.45284 L 524.31085 194.45284 L 521.68362 194.45284 L 512.64851 194.45284 L 512.64851 199.55847 L 512.64851 202.19707 L 512.64851 205.13229 L 512.64851 206.46244 L 512.64851 208.59048 L 512.64851 209.25245 L 555.82262 209.25245 z " />
+         d="M 591.20444 209.25245 L 591.20444 206.29811 L 591.20444 196.6589 L 591.20444 194.45284 L 591.20444 191.64371 L 512.64851 191.64371 L 512.64851 194.45284 L 512.64851 196.6589 L 512.64851 199.55847 L 512.64851 202.19707 L 512.64851 205.13229 L 512.64851 206.46244 L 512.64851 208.59048 L 512.64851 209.25245 L 555.76267 209.25245 L 591.20444 209.25245 z " />
       <text
          xml:space="preserve"
          id="text12"
@@ -1155,8 +1155,8 @@
          x="547.87323"
          y="230.45033"><tspan
            x="512.64844"
-           y="196.25441"
-           id="tspan147">%SOLUTIONS%</tspan></text>
+           y="193.44582"
+           id="tspan294">%SOLUTIONS%</tspan></text>
     </g>
   </g>
 </svg>
