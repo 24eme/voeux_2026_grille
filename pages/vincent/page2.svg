@@ -1,1 +1,242 @@
-../generic/page2.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="148mm"
+   height="210mm"
+   viewBox="0 0 559.37006 793.70081"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="page2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.71271873"
+     inkscape:cx="471.43422"
+     inkscape:cy="491.07731"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g21-8" />
+  <defs
+     id="defs1">
+    <rect
+       x="-90.413437"
+       y="-450.77557"
+       width="592.9209"
+       height="316.44702"
+       id="rect293" />
+    <rect
+       x="605.52692"
+       y="47.962372"
+       width="188.18147"
+       height="39.633057"
+       id="rect258-9" />
+    <rect
+       x="605.52692"
+       y="47.962372"
+       width="281.80234"
+       height="36.942859"
+       id="rect258" />
+    <rect
+       x="0"
+       y="767.66187"
+       width="39.722038"
+       height="13.988418"
+       id="rect3-7-0" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Cubes"
+       preserveAspectRatio="none"
+       id="pattern228"
+       patternTransform="scale(0.4)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="142"
+       height="123"
+       patternTransform="scale(0.4)"
+       id="Cubes"
+       preserveAspectRatio="none"
+       style="fill:#000000"
+       x="0"
+       y="0"
+       inkscape:label="Cubes"
+       inkscape:collect="always"
+       inkscape:isstock="true">
+      <path
+         id="path224"
+         style="fill-opacity:0.6;stroke-width:2;stroke-miterlimit:10"
+         d="M 0.00195313,0.001953 V 0.0039061 L 35.509766,20.503906 71.009766,0.0078124 106.50977,20.503906 142,0.0136718 V 0.001953 Z" />
+      <path
+         id="path225"
+         style="fill-opacity:0.3;stroke-width:2;stroke-miterlimit:10"
+         d="m 35.503902,61.5 0.0039,0.002 v 41 L 0,123.00195 V 81.998047 Z M 142.01171,0 l 0.004,0.002 v 41 l -35.5079,20.499953 V 20.498047 Z m -71.000002,0 0.0039,0.002 v 41 L 35.507806,61.501953 V 20.498047 Z m 35.492192,61.5 0.004,0.002 v 41 L 71,123.00195 V 81.998047 Z" />
+      <path
+         id="path226"
+         style="fill-opacity:1;stroke-width:2;stroke-miterlimit:10"
+         d="m 106.49609,61.5 -0.004,0.002 v 41 L 142,123.00195 V 81.998047 Z M 71.0039,0 71,0.002 v 41 l 35.50781,20.499953 V 20.498047 Z m -71,0 L 0,0.002 v 41 L 35.507806,61.501953 V 20.498047 Z m 35.492194,61.5 -0.0039,0.002 v 41 L 71,123.00195 V 81.998047 Z" />
+      <path
+         id="path227"
+         style="fill-opacity:0.6;stroke-width:2;stroke-miterlimit:10"
+         d="m 70.998047,41.001953 -35.5,20.496094 L 0,41.003906 v 40.998047 l 0.00195313,0.002 35.49999987,-20.496094 35.5,20.496094 L 106.50195,61.507812 142,82.001953 V 41.003906 l -0.002,-0.002 -35.5,20.496094 z" />
+      <path
+         id="path228"
+         style="fill-opacity:0.6;stroke-width:2;stroke-miterlimit:10"
+         d="M 35.505859,102.50195 0.00195313,123 v 0.002 H 142 v -0.008 l -35.49414,-20.49219 -35.500001,20.49609 z" />
+    </pattern>
+    <rect
+       x="649.35974"
+       y="19.513313"
+       width="208.85429"
+       height="39.93816"
+       id="rect2" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Cubes"
+       preserveAspectRatio="none"
+       id="pattern1"
+       patternTransform="scale(0.4)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Cubes"
+       preserveAspectRatio="none"
+       id="pattern6"
+       patternTransform="scale(0.4)" />
+    <rect
+       x="605.52692"
+       y="47.962372"
+       width="276.22278"
+       height="34.668019"
+       id="rect258-6" />
+    <rect
+       x="605.52692"
+       y="47.962372"
+       width="313.55037"
+       height="47.856246"
+       id="rect258-5" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff6a00;stroke-width:0.377953;stroke-opacity:1"
+       id="rect291"
+       width="559.37006"
+       height="793.70081"
+       x="0.1889765"
+       y="0.1889765" />
+    <text
+       xml:space="preserve"
+       transform="matrix(2.8076326,0,0,3.9797503,251.16327,2361.4313)"
+       id="text292"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;line-height:1.3;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect293);display:inline;opacity:0.2;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.377953;stroke-opacity:1"><tspan
+         x="-90.414062"
+         y="-394.71139"
+         id="tspan2">24EME</tspan></text>
+    <g
+       id="g21"
+       transform="matrix(3.7795276,0,0,3.7795276,-604.21733,27.717509)"
+       style="stroke-width:1.5;stroke-dasharray:none">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,45.618164,2.3218808)"
+         id="text258"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect258);display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.66929;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         inkscape:label="text_verti"><tspan
+           x="605.52734"
+           y="77.373883"
+           id="tspan3">Verticalement</tspan></text>
+    </g>
+    <g
+       id="g21-8"
+       transform="matrix(3.7795276,0,0,3.7795276,-580.91047,377.07451)"
+       style="stroke-width:1.5;stroke-dasharray:none">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,30.457788,2.3218808)"
+         id="text258-7"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect258-5);shape-padding:0.992126;display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.66929;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         inkscape:label="text_verti"><tspan
+           x="606.51953"
+           y="78.366071"
+           id="tspan4">Horizontalement</tspan></text>
+    </g>
+    <g
+       id="g35"
+       transform="matrix(3.7795276,0,0,3.7795276,-572.20893,356.18908)">
+      <rect
+         style="font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect258-5);display:inline;opacity:0.623824;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.147655;stroke-opacity:1"
+         id="rect34"
+         width="132.23689"
+         height="14.647612"
+         x="159.17491"
+         y="10.850558"
+         inkscape:label="fond_verti"
+         transform="matrix(1,0,0,5.0382106,0.00584454,-19.424969)" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect34);display:inline;opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+         x="158.81889"
+         y="39.590187"
+         id="text34"><tspan
+           x="159.18164"
+           y="39.129107"
+           id="tspan7"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Montserrat;fill:#000000"
+             id="tspan5">%MOTS_HORIZ%</tspan></tspan></text>
+    </g>
+    <g
+       id="g34"
+       transform="matrix(3.7795276,0,0,3.7795276,-572.20893,1.228344)">
+      <rect
+         style="font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect258-5);display:inline;opacity:0.623824;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.147655;stroke-opacity:1"
+         id="rect259-8-4"
+         width="132.23689"
+         height="14.647612"
+         x="159.17491"
+         y="10.850558"
+         inkscape:label="fond_verti"
+         transform="matrix(1,0,0,5.0382106,0.00584454,-19.424969)" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect259-8-4);display:inline;opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+         x="158.81889"
+         y="39.590187"
+         id="text4"><tspan
+           x="159.18164"
+           y="39.129107"
+           id="tspan11"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Montserrat;fill:#000000"
+             id="tspan9">%MOTS_VERTI%</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       id="text2"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.1164px;font-family:P052;-inkscape-font-specification:'P052, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:none;stroke:url(#pattern228);stroke-width:7.15676235;stroke-dasharray:none"
+       transform="matrix(1.2146433,0,0,1.2146433,-497.23489,-6.2785357)"
+       x="236.02177"
+       y="0"
+       inkscape:label="text2"><tspan
+         x="655.30474"
+         y="48.112553"
+         id="tspan13"><tspan
+           style="font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#ffffff;stroke:#000000;paint-order:stroke fill markers"
+           id="tspan12">Mots croisés </tspan></tspan></text>
+  </g>
+</svg>
