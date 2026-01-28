@@ -7,7 +7,7 @@
    viewBox="0 0 148 210"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    sodipodi:docname="page4.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,15 +24,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.2021543"
-     inkscape:cx="313.18774"
-     inkscape:cy="630.95061"
+     inkscape:zoom="0.60107715"
+     inkscape:cx="-79.856637"
+     inkscape:cy="387.63743"
      inkscape:window-width="1920"
-     inkscape:window-height="1051"
+     inkscape:window-height="1011"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g23" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1">
     <pattern
@@ -40,7 +40,7 @@
        xlink:href="#pattern306"
        preserveAspectRatio="xMidYMid"
        id="pattern307"
-       patternTransform="matrix(-0.11,0,0,-0.11,-455.26087,1.4385377e-7)"
+       patternTransform="matrix(-0.11,0,0,-0.11,-457.37755,1.4385377e-7)"
        x="0"
        y="0" />
     <pattern
@@ -65,60 +65,9 @@
     </pattern>
     <pattern
        inkscape:collect="always"
-       xlink:href="#ZigZag"
-       preserveAspectRatio="none"
-       id="pattern403"
-       patternTransform="matrix(0,-0.05291667,0.05291667,0,154.59028,-330.24665)"
-       x="0"
-       y="-3"
-       height="126" />
-    <pattern
-       patternUnits="userSpaceOnUse"
-       width="100"
-       height="90"
-       patternTransform="scale(0.2)"
-       inkscape:stockid="Zig Zag"
-       id="ZigZag"
-       style="fill:#000000"
-       x="0"
-       y="0"
-       preserveAspectRatio="none"
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       inkscape:label="Zig-zag">
-      <path
-         style="opacity:1;fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none"
-         d="M 50,90 0,40 V 10 L 50,60 100,10 V 40 L 50,90"
-         id="zigzag-path-pattern"
-         sodipodi:nodetypes="ccccccc" />
-    </pattern>
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#Wavy-4"
-       id="pattern340-8"
-       patternTransform="matrix(0.26458333,0,0,0.26458333,97.866122,63.029612)"
-       x="0"
-       y="2"
-       preserveAspectRatio="none" />
-    <pattern
-       inkscape:collect="always"
-       patternUnits="userSpaceOnUse"
-       width="30.066020"
-       height="5.1805778"
-       id="Wavy-4"
-       inkscape:stockid="Wavy"
-       inkscape:isstock="true"
-       inkscape:label="Ondulé">
-      <path
-         style="stroke:none;"
-         d="M 7.597,0.061 C 5.079,-0.187 2.656,0.302 -0.01,1.788 L -0.01,3.061 C 2.773,1.431 5.173,1.052 7.472,1.280 C 9.770,1.508 11.969,2.361 14.253,3.218 C 18.820,4.931 23.804,6.676 30.066,3.061 L 30.062,1.788 C 23.622,5.497 19.246,3.770 14.691,2.061 C 12.413,1.207 10.115,0.311 7.597,0.061 z "
-         id="path786-5" />
-    </pattern>
-    <pattern
-       inkscape:collect="always"
        xlink:href="#Wavy-2-1"
        id="pattern340-3-9"
-       patternTransform="matrix(0.25,0,0,0.25,-0.60016759,106.79217)"
+       patternTransform="matrix(0.26264563,0,0,0.25,-6.0806424,106.79217)"
        x="0"
        y="3.5"
        preserveAspectRatio="xMidYMid" />
@@ -140,7 +89,7 @@
        inkscape:collect="always"
        xlink:href="#Wavy-2"
        id="pattern340-3"
-       patternTransform="matrix(0.25,0,0,0.25,-0.16932759,50.548908)"
+       patternTransform="matrix(0.26053803,0,0,0.25,-5.0757973,50.548908)"
        x="0"
        y="3.5"
        preserveAspectRatio="xMidYMid" />
@@ -162,7 +111,7 @@
        inkscape:collect="always"
        xlink:href="#Wavy"
        id="pattern340"
-       patternTransform="matrix(0.25,0,0,0.25,-0.16928759,11.804018)"
+       patternTransform="matrix(0.25,0,0,0.25,-2.2859543,11.804018)"
        x="0"
        y="3.5"
        preserveAspectRatio="xMidYMid" />
@@ -189,8 +138,8 @@
     <rect
        x="260.56644"
        y="659.50262"
-       width="159.62688"
-       height="246.46436"
+       width="179.59104"
+       height="236.48228"
        id="rect300" />
     <rect
        x="251.23196"
@@ -201,8 +150,8 @@
     <rect
        x="424.74649"
        y="18.749353"
-       width="126.20268"
-       height="222.98564"
+       width="156.98076"
+       height="198.86228"
        id="rect286" />
     <rect
        x="264.45749"
@@ -312,144 +261,22 @@
        width="227.7325"
        height="30.832275"
        id="rect266-7-5" />
+    <rect
+       x="424.74649"
+       y="18.749353"
+       width="292.57068"
+       height="124.82851"
+       id="rect286-6" />
   </defs>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <path
-       id="path254-6"
-       style="vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.294066px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 310.43946,205.59355 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.27151 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.04776 h 1.48053 v -1.08262 h -1.48053 z m 0,-5.27203 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.04776 h 1.48053 v -1.08209 h -1.48053 z m 0,-5.27202 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.04776 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.27201 h 1.48053 v -1.08212 h -1.48053 z m 0,-5.04777 h 1.48053 v -1.08209 h -1.48053 z m 0,-5.27151 h 1.48053 v -1.08262 h -1.48053 z m 0,-5.04827 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.27151 h 1.48053 v -1.08212 h -1.48053 z m 0,-5.04777 h 1.48053 v -1.0826 h -1.48053 z m 0,-5.72128 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.04775 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.27203 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.04775 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.27152 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.04827 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.27151 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.04775 h 1.48053 v -1.08262 h -1.48053 z m 0,-5.272017 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.04776 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.272031 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.04775 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.27204 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.04775 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.27151 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.04827 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.27151 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.04776 h 1.48053 v -1.08262 h -1.48053 z m 0,-5.27203 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.04775 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.27203 h 1.48053 v -1.08211 h -1.48053 z m 0,-5.04776 h 1.48053 v -1.0821 h -1.48053 z m 0,-5.27201 h 1.48053 v -1.08212 h -1.48053 z m 0,-5.04777 h 1.48053 v -1.08209 h -1.48053 z m 0,-5.27151 h 1.48053 v -1.08262 h -1.48053 z m 0,-5.0482694 h 1.48053 V 7.9883932 h -1.48053 z m 0,-5.2715087 h 1.48053 v -1.08212 h -1.48053 z m 0,-5.0477698 h 1.48053 V -2.331396 h -1.48053 z"
-       inkscape:label="separateur_vertical" />
-    <g
-       id="g276"
-       inkscape:label="meteo"
-       transform="matrix(0.26458333,0,0,0.26458333,346.36716,-111.46059)"
-       style="display:inline">
-      <g
-         style="fill:#000000;fill-opacity:0.149362"
-         id="g277"
-         transform="matrix(12.078159,0,0,12.078159,17.829856,319.685)">
-        <path
-           d="m 7,8 a 3.5,3.5 0 0 1 3.5,3.555 0.5,0.5 0 0 0 0.624,0.492 A 1.503,1.503 0 0 1 13,13.5 1.5,1.5 0 0 1 11.5,15 H 3 A 2,2 0 1 1 3.1,11.002 0.5,0.5 0 0 0 3.61,10.627 3.5,3.5 0 0 1 7,8 m 4.473,3 A 4.5,4.5 0 0 0 2.753,10.01 3,3 0 0 0 3,16 h 8.5 a 2.5,2.5 0 0 0 0,-5 z"
-           id="path1-9"
-           style="fill:#000000;fill-opacity:0.149362" />
-        <path
-           d="m 10.5,1.5 a 0.5,0.5 0 0 0 -1,0 v 1 a 0.5,0.5 0 0 0 1,0 z m 3.743,1.964 A 0.5,0.5 0 1 0 13.536,2.757 l -0.708,0.707 a 0.5006316,0.5006316 0 0 0 0.708,0.708 z M 6.464,2.757 A 0.5,0.5 0 0 0 5.757,3.464 L 6.464,4.172 A 0.5006316,0.5006316 0 1 0 7.172,3.464 Z m 1.734,3.374 a 2,2 0 1 1 3.296,2.198 q 0.3,0.423 0.516,0.898 A 3,3 0 1 0 7.17,6.002 q 0.529,0.017 1.028,0.129 m 4.484,4.074 c 0.6,0.215 1.125,0.59 1.522,1.072 a 0.5,0.5 0 0 0 0.039,-0.742 L 13.536,9.828 a 0.5,0.5 0 0 0 -0.854,0.377 M 14.5,6.5 a 0.5,0.5 0 0 0 0,1 h 1 a 0.5,0.5 0 0 0 0,-1 z"
-           id="path2-9"
-           style="fill:#000000;fill-opacity:0.149362" />
-      </g>
-      <text
-         xml:space="preserve"
-         id="text266-1"
-         style="font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect266-7);display:inline;fill:#d7ccc8;stroke:#000000;stroke-width:0.377953"
-         transform="translate(9.5464219,289.84388)"><tspan
-           x="8.4199219"
-           y="39.174"
-           id="tspan149"><tspan
-             style="font-weight:bold;fill:#000000"
-             id="tspan148">Météo</tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         id="text273"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect274);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-         transform="translate(-1.8464273,-7.1752193)"><tspan
-           x="20.007812"
-           y="366.46561"
-           id="tspan151"><tspan
-   style="font-weight:bold"
-   id="tspan150">Nord</tspan>
-</tspan><tspan
-           x="20.007812"
-           y="386.56162"
-           id="tspan152">Pluie et froid.
-</tspan><tspan
-           x="20.007812"
-           y="406.56162"
-           id="tspan153">Moral en baisse, pull </tspan><tspan
-           x="20.007812"
-           y="426.56162"
-           id="tspan154">obligatoire.
-</tspan><tspan
-           x="20.007812"
-           y="446.56162"
-           id="tspan155">
-</tspan><tspan
-           x="20.007812"
-           y="466.56162"
-           id="tspan157"><tspan
-   style="font-weight:bold"
-   id="tspan156">Sud</tspan>
-</tspan><tspan
-           x="20.007812"
-           y="486.65763"
-           id="tspan158">Soleil et douceur.
-</tspan><tspan
-           x="20.007812"
-           y="506.65763"
-           id="tspan159">Les réunions se tiennent en </tspan><tspan
-           x="20.007812"
-           y="526.65763"
-           id="tspan160">terrasse.</tspan></text>
-      <text
-         xml:space="preserve"
-         id="text266-1-6"
-         style="font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect266-7-5);display:inline;fill:#d7ccc8;stroke:#000000;stroke-width:0.377953"
-         transform="translate(9.5464219,544.26579)"><tspan
-           x="8.4199219"
-           y="39.174"
-           id="tspan162"><tspan
-             style="font-weight:bold;fill:#000000"
-             id="tspan161">Citation</tspan></tspan></text>
-    </g>
-    <g
-       id="g280"
-       inkscape:label="citation"
-       transform="matrix(0.26458333,0,0,0.26458333,346.36716,-111.46059)"
-       style="display:inline">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:P052;-inkscape-font-specification:P052;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:211.461;display:inline;fill:#000000;fill-opacity:0.250528;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-         x="36.403442"
-         y="583.55811"
-         id="text277"
-         transform="translate(-18.290931,33.119169)"><tspan
-           x="36.403442"
-           y="583.55811"
-           id="tspan164"><tspan
-             style="fill-opacity:1"
-             id="tspan163">Une personne azerty en vaut </tspan></tspan><tspan
-           x="36.403442"
-           y="603.55808"
-           id="tspan166"><tspan
-             style="fill-opacity:1"
-             id="tspan165">deux.
-</tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         id="text279"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect279);display:inline;fill:#252525;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-         transform="translate(15.175819,-6.0296802)"><tspan
-           x="60.806641"
-           y="676.13944"
-           id="tspan167"> — Christian Clavier
-</tspan></text>
-      <g
-         style="fill:#000000;fill-opacity:0.154976"
-         id="g279"
-         transform="matrix(14.100771,0,0,14.100771,3.614059,525.9564)">
-        <path
-           d="m 12,12 a 1,1 0 0 0 1,-1 V 8.558 a 1,1 0 0 0 -1,-1 h -1.388 q 0,-0.527 0.062,-1.054 0.093,-0.558 0.31,-0.992 0.217,-0.434 0.559,-0.683 0.34,-0.279 0.868,-0.279 V 3 q -0.868,0 -1.52,0.372 A 3.3,3.3 0 0 0 9.806,4.364 4.9,4.9 0 0 0 9.186,5.822 7.7,7.7 0 0 0 9,7.558 V 11 a 1,1 0 0 0 1,1 z M 6,12 A 1,1 0 0 0 7,11 V 8.558 a 1,1 0 0 0 -1,-1 H 4.612 Q 4.612,7.031 4.674,6.504 4.768,5.946 4.984,5.512 5.201,5.078 5.543,4.829 5.883,4.55 6.411,4.55 V 3 Q 5.543,3 4.891,3.372 A 3.3,3.3 0 0 0 3.806,4.364 4.9,4.9 0 0 0 3.186,5.822 7.7,7.7 0 0 0 3,7.558 V 11 a 1,1 0 0 0 1,1 z"
-           id="path1-2"
-           style="fill:#000000;fill-opacity:0.154976" />
-      </g>
-    </g>
     <g
        id="g307"
        inkscape:label="horoscope"
        style="display:inline"
-       transform="translate(-455.26087,-1.05833)">
+       transform="translate(-457.37755,-1.05833)">
       <g
          id="g8"
          inkscape:label="bg"
@@ -637,10 +464,10 @@
            inkscape:label="cancer"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan168">Allez plutot lire votre </tspan><tspan
+             id="tspan1">Allez plutot lire votre </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan169">horoscope chinois.</tspan></text>
+             id="tspan3">horoscope chinois.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-3"
@@ -649,13 +476,13 @@
            inkscape:label="verseau"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan170">Croyez tout ce que vous </tspan><tspan
+             id="tspan4">Croyez tout ce que vous </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan171">lisez, surtout si c'est sur </tspan><tspan
+             id="tspan5">lisez, surtout si c'est sur </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan172">internet.</tspan></text>
+             id="tspan6">internet.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-3-1"
@@ -664,7 +491,7 @@
            inkscape:label="gemeau"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan173">L'avenir ne fait pas le moine.</tspan></text>
+             id="tspan7">L'avenir ne fait pas le moine.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-3-0"
@@ -673,7 +500,7 @@
            inkscape:label="poisson"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan174">La fortune est aveugle.</tspan></text>
+             id="tspan8">La fortune est aveugle.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-3-3"
@@ -682,10 +509,10 @@
            inkscape:label="balance"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan175">Si ça marche, touche y </tspan><tspan
+             id="tspan9">Si ça marche, touche y </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan176">surtout pas.</tspan></text>
+             id="tspan10">surtout pas.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-4"
@@ -694,13 +521,13 @@
            inkscape:label="capricorne"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan177">Un collegue de bureau sera </tspan><tspan
+             id="tspan11">Un collegue de bureau sera </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan178">au bon endroit au bon </tspan><tspan
+             id="tspan12">au bon endroit au bon </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan179">moment, et vous aussi.</tspan></text>
+             id="tspan13">moment, et vous aussi.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-2"
@@ -709,13 +536,13 @@
            inkscape:label="scorpion"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan180">Les files d'attentes ne </tspan><tspan
+             id="tspan14">Les files d'attentes ne </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan181">seront qu'épreuves pour </tspan><tspan
+             id="tspan15">seront qu'épreuves pour </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan182">votre patience.</tspan></text>
+             id="tspan16">votre patience.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-1"
@@ -724,19 +551,19 @@
            inkscape:label="lion"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan183">Surtout ne jouez pas les </tspan><tspan
+             id="tspan17">Surtout ne jouez pas les </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan184">numéros 1 1 2 3 5 8 13 et </tspan><tspan
+             id="tspan18">numéros 1 1 2 3 5 8 13 et </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan185">21, ils pourraient vous </tspan><tspan
+             id="tspan19">21, ils pourraient vous </tspan><tspan
              x="313.2168"
              y="1058.2059"
-             id="tspan186">porter malheur, ou est-ce le </tspan><tspan
+             id="tspan20">porter malheur, ou est-ce le </tspan><tspan
              x="313.2168"
              y="1074.8725"
-             id="tspan187">contraire ?</tspan></text>
+             id="tspan21">contraire ?</tspan></text>
         <text
            xml:space="preserve"
            id="text248-0"
@@ -745,10 +572,10 @@
            inkscape:label="sagittaire"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan188">L'amour appartient à </tspan><tspan
+             id="tspan22">L'amour appartient à </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan189">ceux qui se levent tôt.</tspan></text>
+             id="tspan23">ceux qui se levent tôt.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-8"
@@ -757,10 +584,10 @@
            inkscape:label="vierge"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan190">Vos clés sont dans la salle </tspan><tspan
+             id="tspan24">Vos clés sont dans la salle </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan191">de bain.</tspan></text>
+             id="tspan25">de bain.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-5"
@@ -769,16 +596,16 @@
            inkscape:label="taureau"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan192">Depuis demain matin, le </tspan><tspan
+             id="tspan26">Depuis demain matin, le </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan193">Soleil n'est plus en Taureau, </tspan><tspan
+             id="tspan27">Soleil n'est plus en Taureau, </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan194">donc le prix du gaz va </tspan><tspan
+             id="tspan28">donc le prix du gaz va </tspan><tspan
              x="313.2168"
              y="1058.2059"
-             id="tspan195">encore monter.</tspan></text>
+             id="tspan29">encore monter.</tspan></text>
         <text
            xml:space="preserve"
            id="text248-24"
@@ -787,13 +614,13 @@
            inkscape:label="belier"><tspan
              x="313.2168"
              y="1008.206"
-             id="tspan196">Des portes s'ouvrent à vous, </tspan><tspan
+             id="tspan30">Des portes s'ouvrent à vous, </tspan><tspan
              x="313.2168"
              y="1024.8726"
-             id="tspan197">n'oubliez pas de les refermer </tspan><tspan
+             id="tspan31">n'oubliez pas de les refermer </tspan><tspan
              x="313.2168"
              y="1041.5393"
-             id="tspan198">derrière vous.</tspan></text>
+             id="tspan32">derrière vous.</tspan></text>
       </g>
       <text
          xml:space="preserve"
@@ -803,215 +630,217 @@
          inkscape:label="titre"><tspan
            x="32.708984"
            y="919.52845"
-           id="tspan200"><tspan
+           id="tspan34"><tspan
              style="font-weight:bold"
-             id="tspan199">Horoscope</tspan></tspan></text>
+             id="tspan33">Horoscope</tspan></tspan></text>
     </g>
     <text
        xml:space="preserve"
        id="text280"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect280);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-3.9559776,48.028488)"
+       transform="matrix(0.26458333,0,0,0.26458333,-6.0726444,48.028488)"
        inkscape:label="oressources"><tspan
          x="264.45703"
          y="39.03"
-         id="tspan202"><tspan
+         id="tspan36"><tspan
            style="font-weight:bold;font-size:24px"
-           id="tspan201">Bonne nouvelle pour les </tspan></tspan><tspan
+           id="tspan35">Bonne nouvelle pour les </tspan></tspan><tspan
          x="264.45703"
          y="69.03"
-         id="tspan204"><tspan
+         id="tspan38"><tspan
    style="font-weight:bold;font-size:24px"
-   id="tspan203">recycleries !</tspan>
+   id="tspan37">recycleries !</tspan>
 </tspan><tspan
          x="264.45703"
          y="92.366"
-         id="tspan208"><tspan
+         id="tspan42"><tspan
            style="font-size:13.3333px"
-           id="tspan205">Le 24ème ressuscite le projet libre </tspan><tspan
+           id="tspan39">Le 24ème ressuscite le projet libre </tspan><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan206">ORessource</tspan><tspan
+           id="tspan40">ORessource</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan207"> en </tspan></tspan><tspan
+           id="tspan41"> en </tspan></tspan><tspan
          x="264.45703"
          y="112.366"
-         id="tspan210"><tspan
+         id="tspan44"><tspan
            style="font-size:13.3333px"
-           id="tspan209">proposant une plateforme d'hébergement à la </tspan></tspan><tspan
+           id="tspan43">proposant une plateforme d'hébergement à la </tspan></tspan><tspan
          x="264.45703"
          y="132.366"
-         id="tspan213"><tspan
+         id="tspan47"><tspan
            style="font-size:13.3333px"
-           id="tspan211">demande, d'instance du logiciel : </tspan><tspan
+           id="tspan45">demande, d'instance du logiciel : </tspan><tspan
            style="font-size:13.3333px;fill:#00838f"
-           id="tspan212">oressource.org</tspan></tspan></text>
+           id="tspan46">oressource.org</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text286"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect286);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-46.500607,132.42015)"
+       transform="matrix(0.24581404,0,0,0.26458333,-40.643592,134.53683)"
        inkscape:label="sysnove"><tspan
          x="424.74609"
          y="39.03"
-         id="tspan215"><tspan
+         id="tspan49"><tspan
            style="font-weight:bold;font-size:24px"
-           id="tspan214">Piraterie
+           id="tspan48">Piraterie
 </tspan></tspan><tspan
          x="424.74609"
          y="62.366"
-         id="tspan217"><tspan
+         id="tspan52"><tspan
            style="font-size:13.3333px"
-           id="tspan216">Les bots IA </tspan></tspan><tspan
+           id="tspan50">Les bots IA </tspan><tspan
+           style="font-size:13.3333px"
+           id="tspan51">parcourent le </tspan></tspan><tspan
          x="424.74609"
          y="82.366"
-         id="tspan219"><tspan
+         id="tspan55"><tspan
            style="font-size:13.3333px"
-           id="tspan218">parcourent le web </tspan></tspan><tspan
+           id="tspan53">web </tspan><tspan
+           style="font-size:13.3333px"
+           id="tspan54">mondial et mènent la </tspan></tspan><tspan
          x="424.74609"
          y="102.366"
-         id="tspan221"><tspan
+         id="tspan58"><tspan
            style="font-size:13.3333px"
-           id="tspan220">mondial et mènent la </tspan></tspan><tspan
-         x="424.74609"
-         y="122.366"
-         id="tspan223"><tspan
+           id="tspan56">vie dure à nos </tspan><tspan
            style="font-size:13.3333px"
-           id="tspan222">vie dure à nos </tspan></tspan><tspan
-         x="424.74609"
-         y="142.366"
-         id="tspan225"><tspan
-           style="font-size:13.3333px"
-           id="tspan224">serveurs.
+           id="tspan57">serveurs.
 </tspan></tspan><tspan
          x="424.74609"
+         y="122.366"
+         id="tspan60"><tspan
+           style="font-size:13.3333px"
+           id="tspan59">Heureusement notre </tspan></tspan><tspan
+         x="424.74609"
+         y="142.366"
+         id="tspan63"><tspan
+           style="font-size:13.3333px"
+           id="tspan61">prestataire en </tspan><tspan
+           style="font-size:13.3333px"
+           id="tspan62">infogérance </tspan></tspan><tspan
+         x="424.74609"
          y="162.366"
-         id="tspan227"><tspan
-           style="font-size:13.3333px"
-           id="tspan226">Heureusement notre </tspan></tspan><tspan
-         x="424.74609"
-         y="182.366"
-         id="tspan229"><tspan
-           style="font-size:13.3333px"
-           id="tspan228">prestataire en </tspan></tspan><tspan
-         x="424.74609"
-         y="202.366"
-         id="tspan233"><tspan
-           style="font-size:13.3333px"
-           id="tspan230">infogérance </tspan><tspan
+         id="tspan67"><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan231">Sysnove</tspan><tspan
+           id="tspan64">Sysnove</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan232"> </tspan></tspan><tspan
+           id="tspan65"> </tspan><tspan
+           style="font-size:13.3333px"
+           id="tspan66">veille au grain.</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text286-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect286-6);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-46.906862,178.86949)"
+       inkscape:label="sysnove"><tspan
          x="424.74609"
-         y="222.366"
-         id="tspan235"><tspan
-           style="font-size:13.3333px"
-           id="tspan234">veille au grain.</tspan></tspan></text>
+         y="36.904638"
+         id="tspan69"><tspan
+           style="font-weight:bold"
+           id="tspan68">Solutions des mots croisés</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text295"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect295);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-0.45696759,-52.259213)"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.5736343,-52.259213)"
        inkscape:label="aurouze"><tspan
          x="251.23242"
          y="571.05734"
-         id="tspan237"><tspan
+         id="tspan71"><tspan
    style="font-weight:bold;font-size:24px"
-   id="tspan236">Rats, l'offensive parisienne</tspan>
+   id="tspan70">Rats, l'offensive parisienne</tspan>
 </tspan><tspan
          x="251.23242"
          y="594.39334"
-         id="tspan241"><tspan
+         id="tspan75"><tspan
            style="font-size:13.3333px"
-           id="tspan238">Face à l'invasion, la célèbre </tspan><tspan
+           id="tspan72">Face à l'invasion, la célèbre </tspan><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan239">Maison Aurouze</tspan><tspan
+           id="tspan73">Maison Aurouze</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan240">, </tspan></tspan><tspan
+           id="tspan74">, </tspan></tspan><tspan
          x="251.23242"
          y="614.39334"
-         id="tspan243"><tspan
+         id="tspan77"><tspan
            style="font-size:13.3333px"
-           id="tspan242">expérimente actuellement sa nouvelle arme contre </tspan></tspan><tspan
+           id="tspan76">expérimente actuellement sa nouvelle arme contre </tspan></tspan><tspan
          x="251.23242"
          y="634.39334"
-         id="tspan247"><tspan
+         id="tspan81"><tspan
            style="font-size:13.3333px"
-           id="tspan244">ses nuisibles. Il s'agit d'un </tspan><tspan
+           id="tspan78">ses nuisibles. Il s'agit d'un </tspan><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan245">robot chat</tspan><tspan
+           id="tspan79">robot chat</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan246"> piloté par </tspan></tspan><tspan
+           id="tspan80"> piloté par </tspan></tspan><tspan
          x="251.23242"
          y="654.39334"
-         id="tspan250"><tspan
+         id="tspan84"><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan248">intelligence artificielle</tspan><tspan
+           id="tspan82">intelligence artificielle</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan249"> capable de chasser des </tspan></tspan><tspan
+           id="tspan83"> capable de chasser des </tspan></tspan><tspan
          x="251.23242"
          y="674.39334"
-         id="tspan252"><tspan
+         id="tspan86"><tspan
            style="font-size:13.3333px"
-           id="tspan251">milliers de surmulots par jour.</tspan></tspan></text>
+           id="tspan85">milliers de surmulots par jour.</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text300"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect300);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-       transform="matrix(0.26458333,0,0,0.26458333,34.216073,-37.112091)"
+       transform="matrix(0.23667618,0,0,0.26458333,42.553887,-37.112091)"
        inkscape:label="signature"><tspan
          x="260.56641"
          y="679.78195"
-         id="tspan254"><tspan
+         id="tspan88"><tspan
            style="font-weight:bold;font-size:24px"
-           id="tspan253">SignaturePDF </tspan></tspan><tspan
+           id="tspan87">SignaturePDF </tspan></tspan><tspan
          x="260.56641"
          y="709.78195"
-         id="tspan256"><tspan
-           style="font-weight:bold;font-size:24px"
-           id="tspan255">en pleine </tspan></tspan><tspan
-         x="260.56641"
-         y="739.78195"
-         id="tspan258"><tspan
+         id="tspan91"><tspan
    style="font-weight:bold;font-size:24px"
-   id="tspan257">forme</tspan>
+   id="tspan89">en pleine </tspan><tspan
+   style="font-weight:bold;font-size:24px"
+   id="tspan90">forme</tspan>
 </tspan><tspan
          x="260.56641"
-         y="763.11795"
-         id="tspan260"><tspan
+         y="733.11795"
+         id="tspan93"><tspan
            style="font-size:13.3333px"
-           id="tspan259">Grâce aux subventions </tspan></tspan><tspan
+           id="tspan92">Grâce aux subventions </tspan></tspan><tspan
          x="260.56641"
-         y="783.11795"
-         id="tspan264"><tspan
+         y="753.11795"
+         id="tspan97"><tspan
            style="font-size:13.3333px"
-           id="tspan261">accordées par </tspan><tspan
+           id="tspan94">accordées par </tspan><tspan
            style="font-weight:bold;font-size:13.3333px"
-           id="tspan262">NLNet</tspan><tspan
+           id="tspan95">NLNet</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan263">, le </tspan></tspan><tspan
+           id="tspan96">, le </tspan></tspan><tspan
          x="260.56641"
-         y="803.11795"
-         id="tspan266"><tspan
+         y="773.11795"
+         id="tspan100"><tspan
            style="font-size:13.3333px"
-           id="tspan265">logiciel libre de </tspan></tspan><tspan
-         x="260.56641"
-         y="823.11795"
-         id="tspan268"><tspan
+           id="tspan98">logiciel libre de </tspan><tspan
            style="font-size:13.3333px"
-           id="tspan267">manipulation de PDF </tspan></tspan><tspan
+           id="tspan99">manipulation </tspan></tspan><tspan
          x="260.56641"
-         y="843.11795"
-         id="tspan271"><tspan
+         y="793.11795"
+         id="tspan104"><tspan
+           style="font-size:13.3333px"
+           id="tspan101">de PDF </tspan><tspan
            style="font-size:13.3333px;fill:#00838f"
-           id="tspan269">pdf.24eme.fr</tspan><tspan
+           id="tspan102">pdf.24eme.fr</tspan><tspan
            style="font-size:13.3333px"
-           id="tspan270"> se dote de </tspan></tspan><tspan
+           id="tspan103"> se dote </tspan></tspan><tspan
          x="260.56641"
-         y="863.11795"
-         id="tspan273"><tspan
+         y="813.11795"
+         id="tspan107"><tspan
            style="font-size:13.3333px"
-           id="tspan272">nouvelles fonctionnalités </tspan></tspan></text>
+           id="tspan105">de </tspan><tspan
+           style="font-size:13.3333px"
+           id="tspan106">nouvelles fonctionnalités </tspan></tspan></text>
     <rect
        style="display:inline;fill:#cccccc;stroke:#000000;stroke-width:0.236748;stroke-dasharray:none;stroke-opacity:1"
        id="rect319"
@@ -1031,114 +860,99 @@
        id="text289"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre-wrap;shape-inside:url(#rect319) url(#rect319-9);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        inkscape:label="viti"
-       transform="translate(11.412001,146.48975)"><tspan
+       transform="translate(9.2953336,146.48975)"><tspan
          x="54.574219"
          y="-131.87091"
-         id="tspan274">Suite à une excellente </tspan><tspan
+         id="tspan108">Suite à une excellente </tspan><tspan
          x="54.574219"
          y="-127.46118"
-         id="tspan275">récolte, les célèbres </tspan><tspan
+         id="tspan109">récolte, les célèbres </tspan><tspan
          x="54.574219"
          y="-123.05145"
-         id="tspan277">logiciels <tspan
+         id="tspan111">logiciels <tspan
    style="font-weight:bold"
-   id="tspan276">Giilda</tspan> et </tspan><tspan
+   id="tspan110">Giilda</tspan> et </tspan><tspan
          x="54.574219"
          y="-118.62056"
-         id="tspan279"><tspan
+         id="tspan113"><tspan
    style="font-weight:bold"
-   id="tspan278">OpenOdg</tspan> risquent de </tspan><tspan
+   id="tspan112">OpenOdg</tspan> risquent de </tspan><tspan
          x="54.574219"
          y="-114.18966"
-         id="tspan280">tourner à plein régime.
+         id="tspan114">tourner à plein régime.
 </tspan><tspan
          x="54.574219"
          y="-109.77993"
-         id="tspan281">Les équipes sont sur le </tspan><tspan
+         id="tspan115">Les équipes sont sur le </tspan><tspan
          x="54.574219"
          y="-105.3702"
-         id="tspan282">pont pour faciliter les </tspan><tspan
+         id="tspan116">pont pour faciliter les </tspan><tspan
          x="54.574219"
          y="-100.96048"
-         id="tspan283">revendications, </tspan><tspan
+         id="tspan117">revendications, </tspan><tspan
          x="94.560547"
          y="-131.95684"
-         id="tspan284">parcellaire, drm, </tspan><tspan
+         id="tspan118">parcellaire, drm, </tspan><tspan
          x="94.560547"
          y="-127.54711"
-         id="tspan285">contrats de vente...
+         id="tspan119">contrats de vente...
 </tspan><tspan
          x="94.560547"
          y="-123.13739"
-         id="tspan286">Vignerons, pensez au </tspan><tspan
+         id="tspan120">Vignerons, pensez au </tspan><tspan
          x="94.560547"
          y="-118.70649"
-         id="tspan288"><tspan
+         id="tspan122"><tspan
    style="font-weight:bold"
-   id="tspan287">QrCode</tspan> nutritionnelle </tspan><tspan
+   id="tspan121">QrCode</tspan> nutritionnelle </tspan><tspan
          x="94.560547"
          y="-114.2756"
-         id="tspan289">sur vos étiquettes : </tspan><tspan
+         id="tspan123">sur vos étiquettes : </tspan><tspan
          x="94.560547"
          y="-109.86587"
-         id="tspan291"><tspan
+         id="tspan125"><tspan
            style="fill:#00838f"
-           id="tspan290">nutri.vin</tspan></tspan></text>
+           id="tspan124">nutri.vin</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text320"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:P052;-inkscape-font-specification:P052;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect320);display:inline;fill:#000000;stroke:#000000;stroke-width:0.377953;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0.26458333,0,0,0.26458333,-4.0619076,0.83076008)"><tspan
+       transform="matrix(0.26458333,0,0,0.26458333,-6.1785744,0.83076008)"><tspan
          x="264.56641"
          y="30.379078"
-         id="tspan293"><tspan
+         id="tspan127"><tspan
            style="font-weight:bold"
-           id="tspan292">Viticulture</tspan></tspan></text>
+           id="tspan126">Viticulture</tspan></tspan></text>
     <rect
        style="display:inline;fill:url(#pattern340);stroke:none;stroke-width:0.0655251;stroke-dasharray:none"
        id="rect321"
        width="78.320374"
        height="4.834455"
-       x="66.014938"
+       x="63.89827"
        y="47.728157"
        inkscape:label="separateur_vague_haut" />
     <rect
-       style="display:inline;fill:url(#pattern340-3);stroke:none;stroke-width:0.0655251;stroke-dasharray:none"
+       style="display:inline;fill:url(#pattern340-3);stroke:none;stroke-width:0.0668919;stroke-dasharray:none"
        id="rect321-9"
-       width="78.320374"
+       width="81.621735"
        height="4.834455"
-       x="66.014938"
+       x="63.89827"
        y="86.473038"
        inkscape:label="separateur_vague_haut" />
     <rect
-       style="display:inline;fill:url(#pattern340-3-9);stroke:none;stroke-width:0.0655251;stroke-dasharray:none"
+       style="display:inline;fill:url(#pattern340-3-9);stroke:none;stroke-width:0.0671619;stroke-dasharray:none"
        id="rect321-9-8"
-       width="78.320374"
+       width="82.282013"
        height="4.834455"
-       x="65.901291"
+       x="63.784622"
        y="129.87794"
        inkscape:label="separateur_vague_haut" />
-    <rect
-       style="display:inline;fill:url(#pattern340-8);stroke:none;stroke-width:0.0986224;stroke-dasharray:none"
-       id="rect321-6"
-       width="78.320374"
-       height="10.951754"
-       x="164.05035"
-       y="144.41054"
-       inkscape:label="separateur_vague_bas" />
-    <rect
-       style="fill:url(#pattern403);stroke:none;stroke-width:0.0924777;stroke-dasharray:none;stroke-opacity:1"
-       id="rect341"
-       width="20.553429"
-       height="52.677101"
-       x="220.25732"
-       y="49.619564" />
     <rect
        style="fill:url(#pattern307);fill-rule:nonzero;stroke:none;stroke-width:0.077857;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect294"
        width="1.8868804"
        height="210"
-       x="61.893608"
+       x="59.776939"
        y="1.110223e-14"
        inkscape:label="separateur" />
     <g
@@ -1156,7 +970,7 @@
          y="230.45033"><tspan
            x="512.64844"
            y="193.44582"
-           id="tspan294">%SOLUTIONS%</tspan></text>
+           id="tspan128">%SOLUTIONS%</tspan></text>
     </g>
   </g>
 </svg>
