@@ -11,7 +11,7 @@ OUTPUT_SUBDIR=$(echo $3 | sed 's/output\///' | sed "s/'//g")
 PATH_PAGES="$4"
 DICTIONNAIRE="$5"
 
-if test -f output/$OUTPUT_SUBDIR/carte_finale-booklet.pdf ; then
+if test -f output/$OUTPUT_SUBDIR/carte_finale.pdf && test -f output/$OUTPUT_SUBDIR/carte_finale-booklet.pdf ; then
 	echo output/$OUTPUT_SUBDIR/carte_finale-booklet.pdf OK
 else
 	echo output/$OUTPUT_SUBDIR/carte_finale-booklet.pdf ERROR
